@@ -1,7 +1,7 @@
 <?php
 include 'riot_api_get.php';
 
-$API_KEY = "RGAPI-d2c03524-6371-4940-8cf4-d305391cecd3";
+$API_KEY = "remove api key";
 $puuid = $_GET['puuid'] ?? '';
 $platform = $_GET['platform'] ?? '';
 $routing = $_GET['routing'] ?? '';
@@ -28,3 +28,4 @@ foreach ($matchIds as $matchId) {
 }
 
 echo json_encode(['ranked' => $rankData, 'matches' => $matches]);
+
