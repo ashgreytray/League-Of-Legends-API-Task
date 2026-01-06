@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 header('Content-Type: application/json');
 
-$apiKey = 'RGAPI-d2c03524-6371-4940-8cf4-d305391cecd3';
+$apiKey = 'remove api key';
 
 $raw = file_get_contents('php://input');
 $data = json_decode($raw, true);
@@ -46,3 +46,4 @@ echo json_encode([
     'gameName' => $result['gameName'],
     'tagLine' => $result['tagLine']
 ]);
+
