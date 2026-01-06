@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 
-$api_key = 'RGAPI-d2c03524-6371-4940-8cf4-d305391cecd3';
+$api_key = 'remove api key';
 
 if (!isset($_GET['riot_id']) || !isset($_GET['region'])) {
     echo json_encode(['error' => 'Missing riot_id or region parameter']);
