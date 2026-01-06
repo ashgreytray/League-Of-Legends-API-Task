@@ -4,7 +4,7 @@ File: get_mastery.php
 <?php
 header('Content-Type: application/json');
 
-$API_KEY = 'RGAPI-d2c03524-6371-4940-8cf4-d305391cecd3';
+$API_KEY = 'nahuh';
 $puuid = $_GET['puuid'] ?? '';
 $platform = $_GET['platform'] ?? 'oc1';
 
@@ -25,4 +25,5 @@ curl_close($ch);
 
 $data = json_decode($response, true);
 echo json_encode(array_slice($data, 0, 3));
+
 
