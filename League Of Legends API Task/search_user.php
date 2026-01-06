@@ -2,7 +2,7 @@
 header('Content-Type: application/json');
 
 // === CONFIGURATION ===
-$API_KEY = "RGAPI-d2c03524-6371-4940-8cf4-d305391cecd3";
+$API_KEY = "remove api key";
 
 // === INPUT VALIDATION ===
 $riot_id = $_GET['riot_id'] ?? '';
@@ -66,3 +66,4 @@ function riot_api_get($url, $api_key) {
 }
 
 ?>
+
