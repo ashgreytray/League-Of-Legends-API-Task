@@ -2,7 +2,7 @@
 // === Backend: get_match_data.php ===
 
 $matchId = $_GET['match_id'] ?? '';
-$apiKey = "RGAPI-d2c03524-6371-4940-8cf4-d305391cecd3";
+$apiKey = "remove api key";
 
 if (!$matchId) {
     http_response_code(400);
@@ -21,3 +21,4 @@ curl_close($ch);
 header('Content-Type: application/json');
 echo $response;
 ?>
+
