@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champion Mastery Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #121214; /* Dark background */
+            color: #e0e0e0; /* Light text */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        input[type="text"] {
+            padding: 8px;
+            font-size: 16px;
+            width: 200px;
+            background-color: #2a2a31; /* Dark input background */
+            color: #e0e0e0; /* Light input text */
+            border: 1px solid #333; /* Subtle border */
+            border-radius: 4px;
+        }
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #1a78ae; /* Accent color for focus */
+        }
+        select {
+            padding: 8px;
+            font-size: 16px;
+            background-color: #2a2a31; /* Dark select background */
+            color: #e0e0e0; /* Light select text */
+            border: 1px solid #333; /* Subtle border */
+            border-radius: 4px;
+        }
+        select:focus {
+            outline: none;
+            border-color: #1a78ae; /* Accent color for focus */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #1c1c1f; /* Dark table background */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #333; /* Darker border */
+        }
+        th {
+            background-color: #1a78ae; /* Dark blue header */
+            color: #fff; /* White text */
+            cursor: pointer;
+            user-select: none;
+        }
+        th:hover {
+            background-color: #156a9a; /* Slightly darker on hover */
+        }
+        th.sorted-asc::after {
+            content: ' ▲';
+            font-size: 12px;
+        }
+        th.sorted-desc::after {
+            content: ' ▼';
+            font-size: 12px;
+        }
+        tr:nth-child(even) {
+            background-color: #212125; /* Slightly lighter dark for even rows */
+        }
+        tr:hover {
+            background-color: #2a2a31; /* Slightly lighter on hover */
+        }
+        .champion-cell {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .champion-icon {
+            width: 48px;
+            height: 48px;
+            object-fit: cover;
+        }
+        .error-message {
+            color: #e74c3c; /* Bright red for errors */
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            th, td {
+                padding: 8px;
+                font-size: 14px;
+            }
+            input[type="text"] {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <h2 id="title">Champion Mastery</h2>
+            <div class="search-container">
+                <label for="searchInput" id="searchLabel">Search:</label>
+                <input type="text" id="searchInput" placeholder="Enter champion name" oninput="filterTable()">
+            </div>
+            <select id="languageSelect" onchange="updateLanguage()">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select>
+        </div>
+        <div id="errorMessage" class="error-message"></div>
+        <table id="masteryTable">
+            <thead>
+                <tr>
+                    <th data-key="champion" onclick="sortTable('champion')">Champion</th>
+                    <th data-key="level" onclick="sortTable('level')" class="sorted-desc">Mastery Level</th>
+                    <th data-key="points" onclick="sortTable('points')">Champion Points</th>
+                    <th data-key="lastPlayed" onclick="sortTable('lastPlayed')">Last Played</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script>
+        // Embedded mastery data from mastery.json
+        const masteryData = [
+            {"puuid":"a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw","championId":51,"championLevel":25,"championPoints":291020,"lastPlayTime":1747751362000,"championPointsSinceLastLevel":50420,"championPointsUntilNextLevel":-39420,"markRequiredForNextLevel":2,"tokensEarned":1,"championSeasonMilestone":0,"milestoneGrades":["D+","C+"],"nextSeasonMilestone":{"requireGradeCounts":{"A-":1},"rewardMarks":1,"bonus":false,"totalGamesRequires":1}},
+            {"puuid":"a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw","championId":267,"championLevel":27,"championPoints":267748,"lastPlayTime":1747836324000,"championPointsSinceLastLevel":5148,"championPointsUntilNextLevel":5852,"markRequiredForNextLevel":2,"tokensEarned":0,"championSeasonMilestone":3,"milestoneGrades":[],"nextSeasonMilestone":{"requireGradeCounts":{"S-":1},"rewardMarks":2,"bonus":false,"totalGamesRequires":1}},
+            {"puuid":"a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw","championId":99,"championLevel":15,"championPoints":183742,"lastPlayTime":1747756102000,"championPointsSinceLastLevel":53142,"championPointsUntilNextLevel":-42142,"markRequiredForNextLevel":2,"tokensEarned":1,"championSeasonMilestone":1,"milestoneGrades":[],"nextSeasonMilestone":{"requireGradeCounts":{"A-":1},"rewardMarks":1,"bonus":false,"totalGamesRequires":1}},
+            {"puuid":"a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw","championId":121,"championLevel":1,"championPoints":84,"lastPlayTime":1621003658000,"championPointsSinceLastLevel":84,"championPointsUntilNextLevel":1716,"markRequiredForNextLevel":0,"tokensEarned":0,"championSeasonMilestone":0,"nextSeasonMilestone":{"requireGradeCounts":{"A-":1},"rewardMarks":1,"bonus":false,"totalGamesRequires":1}}
+        ];
+
+        // Language translations
+        const translations = {
+            en: {
+                title: "Champion Mastery",
+                searchLabel: "Search:",
+                champion: "Champion",
+                level: "Mastery Level",
+                points: "Champion Points",
+                lastPlayed: "Last Played"
+            },
+            es: {
+                title: "Maestría de Campeones",
+                searchLabel: "Buscar:",
+                champion: "Campeón",
+                level: "Nivel de Maestría",
+                points: "Puntos de Campeón",
+                lastPlayed: "Última Partida"
+            }
+        };
+
+        // Sorting state
+        let sortState = {
+            column: 'level',
+            direction: 'desc' // Start with Mastery Level, highest to lowest
+        };
+
+        // Load champion.json dynamically
+        let championData = {};
+        fetch('./champion.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Failed to load champion.json. Status: ${response.status} ${response.statusText}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (!data.data || typeof data.data !== 'object') {
+                    throw new Error('Invalid champion.json format: Missing or invalid "data" property');
+                }
+                championData = data.data;
+                console.log(`Loaded ${Object.keys(championData).length} champions from champion.json`);
+                populateTable();
+            })
+            .catch(error => {
+                console.error('Error loading champion.json:', error);
+                document.getElementById('errorMessage').textContent = 
+                    `Error: Could not load champion.json. Ensure the file is in the same folder, is valid JSON, and accessible. Details: ${error.message}. Using fallback data.`;
+                championData = {
+                    "Aatrox": { id: "Aatrox", key: "266", name: "Aatrox", image: { full: "Aatrox.png" } },
+                    "Ahri": { id: "Ahri", key: "103", name: "Ahri", image: { full: "Ahri.png" } },
+                    "Akali": { id: "Akali", key: "84", name: "Akali", image: { full: "Akali.png" } },
+                    "Caitlyn": { id: "Caitlyn", key: "51", name: "Caitlyn", image: { full: "Caitlyn.png" } },
+                    "Ezreal": { id: "Ezreal", key: "81", name: "Ezreal", image: { full: "Ezreal.png" } },
+                    "Jinx": { id: "Jinx", key: "222", name: "Jinx", image: { full: "Jinx.png" } },
+                    "Lux": { id: "Lux", key: "99", name: "Lux", image: { full: "Lux.png" } },
+                    "Nami": { id: "Nami", key: "267", name: "Nami", image: { full: "Nami.png" } },
+                    "Vayne": { id: "Vayne", key: "67", name: "Vayne", image: { full: "Vayne.png" } },
+                    "Khazix": { id: "Khazix", key: "121", name: "Kha'Zix", image: { full: "Khazix.png" } }
+                };
+                console.log(`Using fallback data with ${Object.keys(championData).length} champions`);
+                populateTable();
+            });
+
+        // Format date as DD/MM/YYYY for Australian format
+        function formatDateAustralian(timestamp) {
+            if (!timestamp || isNaN(timestamp)) return '-';
+            const date = new Date(timestamp);
+            if (isNaN(date.getTime())) return '-';
+            const day = String(date.getDate()).padStart(2, '0');
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const year = date.getFullYear();
+            return `${day}/${month}/${year}`;
+        }
+
+        // Populate table with all champions
+        function populateTable() {
+            const tbody = document.querySelector('#masteryTable tbody');
+            tbody.innerHTML = '';
+
+            // Create a map of mastery data by championId
+            const masteryMap = {};
+            masteryData.forEach(mastery => {
+                masteryMap[mastery.championId] = mastery;
+            });
+
+            // Create champion array with mastery data
+            const champions = Object.values(championData).map(champion => {
+                const mastery = masteryMap[champion.key] || {
+                    championLevel: 0,
+                    championPoints: 0,
+                    lastPlayTime: 0
+                };
+                return { ...champion, mastery };
+            });
+
+            // Sort champions
+            champions.sort((a, b) => {
+                const { column, direction } = sortState;
+                let aValue, bValue;
+
+                if (column === 'champion') {
+                    aValue = a.name.toLowerCase();
+                    bValue = b.name.toLowerCase();
+                } else if (column === 'level') {
+                    aValue = a.mastery.championLevel;
+                    bValue = b.mastery.championLevel;
+                } else if (column === 'points') {
+                    aValue = a.mastery.championPoints;
+                    bValue = b.mastery.championPoints;
+                } else if (column === 'lastPlayed') {
+                    aValue = a.mastery.lastPlayTime;
+                    bValue = b.mastery.lastPlayTime;
+                }
+
+                if (aValue < bValue) return direction === 'asc' ? -1 : 1;
+                if (aValue > bValue) return direction === 'asc' ? 1 : -1;
+                return 0;
+            });
+
+            // Render rows
+            champions.forEach(champion => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td class="champion-cell">
+                        <img src="http://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/${champion.image.full}" 
+                             alt="${champion.name}" 
+                             class="champion-icon"
+                             onerror="this.src='https://via.placeholder.com/48?text=${champion.name}'">
+                        ${champion.name}
+                    </td>
+                    <td>${champion.mastery.championLevel}</td>
+                    <td>${champion.mastery.championPoints.toLocaleString()}</td>
+                    <td>${formatDateAustralian(champion.mastery.lastPlayTime)}</td>
+                `;
+                tbody.appendChild(row);
+            });
+
+            // Update sort indicators
+            updateSortIndicators();
+        }
+
+        // Sort table by column
+        function sortTable(column) {
+            if (sortState.column === column) {
+                // Toggle direction if same column
+                sortState.direction = sortState.direction === 'asc' ? 'desc' : 'asc';
+            } else {
+                // New column: start with descending (highest first) for numbers, ascending for champion
+                sortState.column = column;
+                sortState.direction = column === 'champion' ? 'asc' : 'desc';
+            }
+            populateTable();
+        }
+
+        // Update sort indicators
+        function updateSortIndicators() {
+            const headers = document.querySelectorAll('#masteryTable th');
+            headers.forEach(header => {
+                header.classList.remove('sorted-asc', 'sorted-desc');
+                if (header.getAttribute('data-key') === sortState.column) {
+                    header.classList.add(`sorted-${sortState.direction}`);
+                }
+            });
+        }
+
+        // Filter table based on search input
+        function filterTable() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const rows = document.querySelectorAll('#masteryTable tbody tr');
+
+            rows.forEach(row => {
+                const championName = row.querySelector('.champion-cell').textContent.toLowerCase();
+                row.style.display = championName.includes(searchTerm) ? '' : 'none';
+            });
+        }
+
+        // Update language
+        function updateLanguage() {
+            const lang = document.getElementById('languageSelect').value;
+            const t = translations[lang];
+
+            document.getElementById('title').textContent = t.title;
+            document.getElementById('searchLabel').textContent = t.searchLabel;
+            const headers = document.querySelectorAll('#masteryTable th');
+            headers.forEach(header => {
+                const key = header.getAttribute('data-key');
+                header.textContent = t[key];
+                // Reapply sort indicator
+                if (header.getAttribute('data-key') === sortState.column) {
+                    header.classList.add(`sorted-${sortState.direction}`);
+                }
+            });
+        }
+
+        // Initialize language
+        updateLanguage();
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LoL Match Viewer</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #0a0a0a; color: #eee; padding: 20px; }
+    .player { border: 1px solid #333; padding: 10px; margin-bottom: 10px; background: #111; }
+    .team100 { border-left: 5px solid #3ba3ec; }
+    .team200 { border-left: 5px solid #e84141; }
+    .winner { background: #1f4c1f; }
+    h2 { color: #6cf; }
+  </style>
+</head>
+<body>
+
+<h2>LoL Match Stats Viewer</h2>
+<input type="text" id="matchIdInput" placeholder="Enter Match ID" />
+<button onclick="loadMatch()">Fetch Match Data</button>
+<div id="output"></div>
+
+<script>
+function loadMatch() {
+  const matchId = document.getElementById('matchIdInput').value;
+  if (!matchId) return alert('Enter a match ID');
+
+  fetch(`get_match_data.php?match_id=${matchId}`)
+    .then(res => res.json())
+    .then(data => {
+      const out = document.getElementById('output');
+      out.innerHTML = '';
+
+      const players = data.info.participants;
+      const duration = (data.info.gameDuration / 60).toFixed(1);
+      const mode = data.info.gameMode;
+
+      out.innerHTML += `<h3>Game Mode: ${mode}, Duration: ${duration} mins</h3>`;
+
+      players.forEach(p => {
+        const kda = `${p.kills}/${p.deaths}/${p.assists}`;
+        const winClass = p.win ? 'winner' : '';
+        const teamClass = p.teamId === 100 ? 'team100' : 'team200';
+
+        out.innerHTML += `
+          <div class="player ${teamClass} ${winClass}">
+            <strong>${p.summonerName}</strong> (${p.championName})<br>
+            KDA: ${kda} | Gold: ${p.goldEarned} | DMG: ${p.totalDamageDealtToChampions}<br>
+            CS: ${p.totalMinionsKilled + p.neutralMinionsKilled}
+          </div>
+        `;
+      });
+    })
+    .catch(err => {
+      console.error(err);
+      alert('Failed to load match data.');
+    });
+}
+</script>
+
+</body>
+</html>

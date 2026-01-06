@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>School Forum</title>
+  <style>
+    body {
+      background-color: #0e1013;
+      color: #f3f4f6;
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    .forum-container {
+      background-color: #1f2937;
+      border-radius: 16px;
+      padding: 20px;
+      width: 100%;
+      max-width: 700px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .comment-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 2rem;
+    }
+
+    .comment-form textarea {
+      resize: vertical;
+      background-color: #111827;
+      border: 1px solid #374151;
+      border-radius: 12px;
+      padding: 12px;
+      font-size: 1rem;
+      color: #f3f4f6;
+      height: 80px;
+    }
+
+    .comment-form button {
+      align-self: flex-end;
+      padding: 10px 20px;
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .comment-form button:hover {
+      background-color: #1d4ed8;
+    }
+
+    .comment {
+      background-color: #111827;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .comment-content {
+      font-size: 1rem;
+    }
+
+    .comment-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.875rem;
+      opacity: 0.8;
+    }
+
+    .vote-buttons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .vote-buttons button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1rem;
+      color: #9ca3af;
+    }
+
+    .vote-buttons button:hover {
+      color: #f9fafb;
+    }
+
+    .delete-button {
+      background: none;
+      border: none;
+      color: #ef4444;
+      font-size: 0.875rem;
+      cursor: pointer;
+    }
+
+    .reply-section {
+      margin-top: 10px;
+      padding-left: 20px;
+      border-left: 2px solid #374151;
+    }
+
+    .reply-form {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .reply-form textarea {
+      resize: vertical;
+      background-color: #1e2430;
+      border: 1px solid #4b5563;
+      border-radius: 8px;
+      padding: 10px;
+      font-size: 0.9rem;
+      color: #f3f4f6;
+      height: 60px;
+    }
+
+    .reply-form button {
+      align-self: flex-end;
+      padding: 8px 16px;
+      background-color: #d97706;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .reply-form button:hover {
+      background-color: #b45309;
+    }
+
+    .reply {
+      background-color: #1e2430;
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 8px;
+      margin-left: 10px;
+      font-size: 0.9rem;
+    }
+
+    .reply-content {
+      font-size: 0.9rem;
+    }
+
+    .reply-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎓 School Forum — League of Legends Discussion</h1>
+  <div class="forum-container">
+    <form class="comment-form" id="commentForm">
+      <textarea id="commentInput" placeholder="Write your comment here..."></textarea>
+      <button type="submit">Post Comment</button>
+    </form>
+
+    <div id="commentsList"></div>
+  </div>
+
+  <script>
+    const commentForm = document.getElementById("commentForm");
+    const commentInput = document.getElementById("commentInput");
+    const commentsList = document.getElementById("commentsList");
+
+    function formatDate(date) {
+      const pad = n => n.toString().padStart(2, '0');
+      return `${pad(date.getDate())}/${pad(date.getMonth() + 1)}/${date.getFullYear()} ${pad(date.getHours())}:${pad(date.getMinutes())}`;
+    }
+
+    function createCommentElement(text, postedAt = new Date(), votes = 0, replies = []) {
+      const wrapper = document.createElement("div");
+      wrapper.className = "comment";
+
+      const content = document.createElement("div");
+      content.className = "comment-content";
+      content.textContent = text;
+
+      const footer = document.createElement("div");
+      footer.className = "comment-footer";
+
+      const time = document.createElement("span");
+      time.textContent = `Posted: ${formatDate(postedAt)}`;
+
+      const voteWrapper = document.createElement("div");
+      voteWrapper.className = "vote-buttons";
+
+      let voteCount = votes;
+      const voteDisplay = document.createElement("span");
+      voteDisplay.textContent = voteCount;
+
+      const upBtn = document.createElement("button");
+      upBtn.innerHTML = "⬆️";
+      upBtn.onclick = () => {
+        voteCount++;
+        voteDisplay.textContent = voteCount;
+      };
+
+      const downBtn = document.createElement("button");
+      downBtn.innerHTML = "⬇️";
+      downBtn.onclick = () => {
+        voteCount--;
+        voteDisplay.textContent = voteCount;
+      };
+
+      const deleteBtn = document.createElement("button");
+      deleteBtn.className = "delete-button";
+      deleteBtn.textContent = "Delete";
+      deleteBtn.onclick = () => {
+        commentsList.removeChild(wrapper);
+      };
+
+      const replySection = document.createElement("div");
+      replySection.className = "reply-section";
+
+      const replyForm = document.createElement("form");
+      replyForm.className = "reply-form";
+      const replyInput = document.createElement("textarea");
+      replyInput.placeholder = "Write your reply here...";
+      const replyButton = document.createElement("button");
+      replyButton.textContent = "Post Reply";
+      replyButton.type = "submit";
+      replyForm.append(replyInput, replyButton);
+
+      const replyList = document.createElement("div");
+      replyList.className = "reply-list";
+
+      replyForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const replyText = replyInput.value.trim();
+        if (replyText.length === 0) return;
+        const replyElement = createReplyElement(replyText);
+        replyList.prepend(replyElement);
+        replyInput.value = "";
+      });
+
+      voteWrapper.append(upBtn, voteDisplay, downBtn);
+      footer.append(time, voteWrapper);
+      wrapper.append(content, footer, deleteBtn, replySection);
+      replySection.append(replyForm, replyList);
+
+      replies.forEach(reply => {
+        const replyElement = createReplyElement(reply.text, reply.postedAt, reply.votes);
+        replyList.appendChild(replyElement);
+      });
+
+      return wrapper;
+    }
+
+    function createReplyElement(text, postedAt = new Date(), votes = 0) {
+      const reply = document.createElement("div");
+      reply.className = "reply";
+
+      const content = document.createElement("div");
+      content.className = "reply-content";
+      content.textContent = text;
+
+      const footer = document.createElement("div");
+      footer.className = "reply-footer";
+
+      const time = document.createElement("span");
+      time.textContent = `Posted: ${formatDate(postedAt)}`;
+
+      const voteWrapper = document.createElement("div");
+      voteWrapper.className = "vote-buttons";
+
+      let voteCount = votes;
+      const voteDisplay = document.createElement("span");
+      voteDisplay.textContent = voteCount;
+
+      const upBtn = document.createElement("button");
+      upBtn.innerHTML = "⬆️";
+      upBtn.onclick = () => {
+        voteCount++;
+        voteDisplay.textContent = voteCount;
+      };
+
+      const downBtn = document.createElement("button");
+      downBtn.innerHTML = "⬇️";
+      downBtn.onclick = () => {
+        voteCount--;
+        voteDisplay.textContent = voteCount;
+      };
+
+      const deleteBtn = document.createElement("button");
+      deleteBtn.className = "delete-button";
+      deleteBtn.textContent = "Delete";
+      deleteBtn.onclick = () => {
+        reply.parentNode.removeChild(reply);
+      };
+
+      voteWrapper.append(upBtn, voteDisplay, downBtn);
+      footer.append(time, voteWrapper);
+      reply.append(content, footer, deleteBtn);
+      return reply;
+    }
+
+    commentForm.addEventListener("submit", e => {
+      e.preventDefault();
+      const text = commentInput.value.trim();
+      if (text.length === 0) return;
+      const commentElement = createCommentElement(text);
+      commentsList.prepend(commentElement);
+      commentInput.value = "";
+    });
+
+    // Preload LoL-related forum posts
+    const predefinedComments = [
+      {
+        text: "What do you guys think of the latest balance changes? Riot overdid the Yasuo buffs again.",
+        replies: [
+          { text: "Totally agree, Yasuo’s windwall is oppressive now!", postedAt: new Date(Date.now() - 2 * 86400000), votes: 8 },
+          { text: "I think it’s fine, just ban him if he’s too strong.", postedAt: new Date(Date.now() - 1 * 86400000), votes: 3 },
+          { text: "They need to nerf his Q damage ASAP.", postedAt: new Date(Date.now() - 12 * 3600000), votes: 5 }
+        ]
+      },
+      { text: "Zed mains acting like they're playing high skill champs... lmao.", replies: [] },
+      { text: "Best way to climb from Bronze as a support? I need advice badly.", replies: [] },
+      { text: "Ranked is unplayable during school holidays, matchmaking goes insane.", replies: [] },
+      { text: "Any thoughts on Arena coming back next patch? I actually liked it.", replies: [] },
+      { text: "Why is every game either a stomp or a FF15 now? So frustrating.", replies: [] },
+      { text: "Ivern jungle feels really good this patch. Anyone else trying him?", replies: [] }
+    ];
+
+    predefinedComments.forEach(({ text, replies }) => {
+      const randomVotes = Math.floor(Math.random() * 41) - 10; // -10 to +30 votes
+      const daysAgo = Math.floor(Math.random() * 5) + 1; // 1–5 days ago
+      const pastDate = new Date(Date.now() - daysAgo * 86400000);
+      const commentElement = createCommentElement(text, pastDate, randomVotes, replies);
+      commentsList.appendChild(commentElement);
+    });
+  </script>
+
+</body>
+</html>

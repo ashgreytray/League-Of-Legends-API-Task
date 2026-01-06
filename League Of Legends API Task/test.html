@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Match Scoreboard - Enhanced OP.GG Style</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background: #121214;
+      color: #e0e0e0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      padding: 0;
+      font-size: 14px;
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+    }
+    body.light-mode {
+      background: #f5f5f5;
+      color: #333;
+    }
+    body.light-mode .sidebar,
+    body.light-mode .card,
+    body.light-mode .team,
+    body.light-mode .match-details,
+    body.light-mode .match-header,
+    body.light-mode .player-card {
+      background: #fff;
+      border-color: #ddd;
+    }
+    body.light-mode .sidebar a:hover,
+    body.light-mode .match-header {
+      background: #e0e0e0;
+    }
+    body.light-mode .tab {
+      background: #e0e0e0;
+      color: #555;
+    }
+    body.light-mode .tab.active {
+      background: #1a78ae;
+      color: #fff;
+    }
+    body.light-mode .match-header.win {
+      background: #e6f0fa;
+      border-left: 4px solid #1abc9c;
+    }
+    body.light-mode .match-header.loss {
+      background: #f8e1e1;
+      border-left: 4px solid #e74c3c;
+    }
+    header {
+      background: linear-gradient(145deg, #1a1a1d, #212125);
+      padding: 20px;
+      border-bottom: 2px solid #2a2a31;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+    body.light-mode header {
+      background: linear-gradient(145deg, #e0e0e0, #f5f5f5);
+      border-bottom: 2px solid #ccc;
+    }
+    .header-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .player-card {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: #1c1c1f;
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid #333;
+      max-width: 50%;
+    }
+    .player-card img.avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 3px solid #1a78ae;
+      object-fit: cover;
+    }
+    .player-card .info {
+      flex: 1;
+    }
+    .player-card .info strong {
+      font-size: 20px;
+      color: #fff;
+    }
+    body.light-mode .player-card .info strong {
+      color: #333;
+    }
+    .player-card .info span {
+      color: #888;
+      font-size: 12px;
+    }
+    body.light-mode .player-card .info span {
+      color: #666;
+    }
+    .player-card .stats {
+      display: flex;
+      gap: 10px;
+      font-size: 12px;
+      color: #bbb;
+    }
+    body.light-mode .player-card .stats {
+      color: #555;
+    }
+    .player-card .stats .rank {
+      color: #f1c40f;
+    }
+    .player-card .stats .winrate {
+      color: #1abc9c;
+    }
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 92px;
+      bottom: 0;
+      width: 200px;
+      background: #1c1c1f;
+      padding: 20px;
+      border-right: 1px solid #333;
+      overflow-y: auto;
+      z-index: 90;
+    }
+    .sidebar h3 {
+      margin: 0 0 15px;
+      color: #1a78ae;
+      font-size: 16px;
+    }
+    .sidebar a {
+      display: block;
+      padding: 10px;
+      color: #bbb;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+    body.light-mode .sidebar a {
+      color: #555;
+    }
+    .sidebar a:hover {
+      background: #2a2a31;
+      color: #fff;
+    }
+    body.light-mode .sidebar a:hover {
+      background: #e0e0e0;
+      color: #333;
+    }
+    .main-content {
+      margin-left: 220px;
+      padding: 20px;
+      max-width: 1200px;
+      margin-right: auto;
+    }
+    .tabs {
+      display: flex;
+      gap: 10px;
+      padding: 10px 0;
+      background: #1c1c1f;
+      border-bottom: 1px solid #333;
+      margin-bottom: 20px;
+    }
+    body.light-mode .tabs {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+    .tab {
+      padding: 8px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      background: #2a2a31;
+      color: #888;
+      transition: background 0.2s, color 0.2s;
+    }
+    .tab.active {
+      background: #1a78ae;
+      color: white;
+    }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .card {
+      background: #1c1c1f;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #333;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    .rank-info img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 15px;
+    }
+    .rank-info div {
+      font-size: 16px;
+      font-weight: bold;
+      color: #f1c40f;
+    }
+    .rank-info span {
+      color: #888;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    body.light-mode .rank-info span {
+      color: #666;
+    }
+    .rank-info span:hover {
+      color: #bbb;
+    }
+    body.light-mode .rank-info span:hover {
+      color: #555;
+    }
+    .recent-games {
+      text-align: center;
+    }
+    .recent-games .winrate-container {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 15px;
+    }
+    .recent-games .winrate-circle-bg {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 6px solid #e74c3c;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .recent-games .winrate-circle {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .recent-games .winrate-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      font-weight: bold;
+      color: #e0e0e0;
+    }
+    body.light-mode .recent-games .winrate-text {
+      color: #333;
+    }
+    .recent-games div {
+      text-align: center;
+      color: #bbb;
+    }
+    body.light-mode .recent-games div {
+      color: #555;
+    }
+    .champ-stats .champ {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 15px;
+      padding: 10px;
+      background: #212125;
+      border-radius: 5px;
+    }
+    body.light-mode .champ-stats .champ {
+      background: #e0e0e0;
+    }
+    .champ-stats .champ img {
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+    }
+    .mastery-section {
+      margin-bottom: 30px;
+    }
+    .mastery-section h3 {
+      font-size: 18px;
+      color: #1a78ae;
+      margin-bottom: 15px;
+    }
+    .mastery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .mastery-card {
+      background: #1c1c1f;
+      padding: 15px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      border: 1px solid #333;
+    }
+    .mastery-card img {
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+    }
+    .mastery-card .info {
+      flex: 1;
+    }
+    .mastery-card .info .level {
+      color: #f1c40f;
+      font-weight: bold;
+    }
+    .match-header {
+      background: #1c1c1f;
+      padding: 15px;
+      border-radius: 8px 8px 0 0;
+      cursor: pointer;
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #333;
+    }
+    .match-header.win {
+      background: #1e2f45;
+      border-left: 4px solid #1abc9c;
+    }
+    .match-header.loss {
+      background: #3a2525;
+      border-left: 4px solid #e74c3c;
+    }
+    .match-header .left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .match-header .champion {
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      background-size: cover;
+      background-position: center;
+    }
+    .match-header .details {
+      flex: 1;
+    }
+    .match-header .details strong {
+      color: #fff;
+    }
+    body.light-mode .match-header .details strong {
+      color: #333;
+    }
+    .match-header .stats {
+      text-align: right;
+      color: #bbb;
+    }
+    body.light-mode .match-header .stats {
+      color: #555;
+    }
+    .arrow {
+      font-size: 18px;
+      user-select: none;
+    }
+    .match-details {
+      display: none;
+      background: #17171a;
+      padding: 15px;
+      border-radius: 0 0 8px 8px;
+      border: 1px solid #333;
+      border-top: none;
+    }
+    .team {
+      margin: 10px 0;
+      padding: 10px;
+      background: #1c1c1f;
+      border-radius: 8px;
+    }
+    .player {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #333;
+    }
+    .player:last-child {
+      border-bottom: none;
+    }
+    .player .champion {
+      width: 40px;
+      height: 40px;
+      margin-right: 15px;
+      border-radius: 5px;
+      background-size: cover;
+      background-position: center;
+    }
+    .player-name {
+      flex: 1;
+      font-weight: bold;
+      color: #1a78ae;
+    }
+    .player-name:hover {
+      color: #156a9a;
+      text-decoration: underline;
+    }
+    .kda, .cs, .gold, .vision, .damage, .items, .lane, .descriptor {
+      margin: 0 15px;
+      font-size: 12px;
+      color: #888;
+      min-width: 80px;
+    }
+    body.light-mode .kda, body.light-mode .cs, body.light-mode .gold, body.light-mode .vision, body.light-mode .damage, body.light-mode .items, body.light-mode .lane, body.light-mode .descriptor {
+      color: #666;
+    }
+    .kda span, .cs span, .gold span, .vision span, .damage span, .lane span {
+      color: #fff;
+    }
+    body.light-mode .kda span, body.light-mode .cs span, body.light-mode .gold span, body.light-mode .vision span, body.light-mode .damage span, body.light-mode .lane span {
+      color: #333;
+    }
+    .items img {
+      width: 24px;
+      height: 24px;
+      margin: 0 3px;
+      vertical-align: middle;
+      border-radius: 3px;
+    }
+    #show-more {
+      background: #1a78ae;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      display: block;
+      margin: 30px auto;
+      transition: background 0.2s;
+    }
+    #show-more:hover {
+      background: #156a9a;
+    }
+    .settings-section {
+      margin-bottom: 30px;
+    }
+    .settings-section h3 {
+      font-size: 18px;
+      color: #1a78ae;
+      margin-bottom: 15px;
+    }
+    .settings-option {
+      margin-bottom: 20px;
+    }
+    .settings-option label {
+      display: block;
+      margin-bottom: 5px;
+      color: #bbb;
+    }
+    body.light-mode .settings-option label {
+      color: #555;
+    }
+    .settings-option select, .settings-option button {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #333;
+      background: #2a2a31;
+      color: #e0e0e0;
+      font-size: 14px;
+    }
+    body.light-mode .settings-option select, body.light-mode .settings-option button {
+      background: #e0e0e0;
+      color: #333;
+      border: 1px solid #ddd;
+    }
+    .settings-option button {
+      cursor: pointer;
+    }
+    .settings-option button:hover {
+      background: #1a78ae;
+      color: #fff;
+    }
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+      .main-content {
+        margin-left: 0;
+      }
+      .header-content {
+        flex-direction: column;
+        gap: 15px;
+      }
+      .player-card {
+        max-width: 100%;
+      }
+      .summary {
+        grid-template-columns: 1fr;
+      }
+      
+    }
+    .refresh-button {
+      background-color: #1f2937;
+      color: #f3f4f6;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.2s ease, transform 0.15s ease;
+      margin-bottom: 20px;
+    }
+
+    .refresh-button:hover {
+      background-color: #374151;
+      transform: scale(1.05);
+    }
+
+    .refresh-button:active {
+      background-color: #111827;
+      transform: scale(0.97);
+    }
+
+    .last-updated {
+      font-size: 1rem;
+      opacity: 0.85;
+    }D
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h3 data-i18n="navigation">Navigation</h3>
+    <a href="#summary" data-i18n="summary">Summary</a>
+    <a href="#mastery" data-i18n="champion_mastery">Champion Mastery</a>
+    <a href="#matches" data-i18n="match_history">Match History</a>
+    <a href="#settings" data-i18n="settings">Settings</a>
+  </div>
+  <header>
+    <div class="header-content">
+      <div class="player-card" id="player-card"></div>
+      <button class="refresh-button">🔄 Refresh</button>
+      <span class="last-updated" id="lastUpdated">Last updated: —</span>
+
+  <script>
+    function updateTime() {
+      const now = new Date();
+      const gmt10 = new Date(now.getTime() + 10 * 60 * 60 * 1000); // Convert to GMT+10 manually
+
+      const pad = n => n.toString().padStart(2, '0');
+      const formatted = `${pad(gmt10.getDate())}/${pad(gmt10.getMonth() + 1)}/${gmt10.getFullYear()} ${pad(gmt10.getHours())}:${pad(gmt10.getMinutes())}:${pad(gmt10.getSeconds())}`;
+
+      document.getElementById('lastUpdated').textContent = `Last updated: ${formatted}`;
+    }
+
+    // Optional: Run on load
+    updateTime();
+  </script>
+    </div>
+  </header>
+  <div class="main-content">
+    <div class="tabs">
+      <div class="tab active" data-queue="all" data-i18n="all_queues">ALL</div>
+      <div class="tab" data-queue="420" data-i18n="ranked_solo_duo">RANKED SOLO/DUO</div>
+      <div class="tab" data-queue="440" data-i18n="ranked_flex">RANKED FLEX</div>
+      <div class="tab" data-queue="430" data-i18n="aram">ARAM</div>
+    </div>
+    <div id="summary" class="summary">
+      <div class="card rank-info" id="rank-info">
+        <img src="https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/ranked-emblem/emblem-bronze.png" alt="Rank Emblem" />
+        <div id="rank-text"></div>
+        <span data-i18n="view_season_tier">View Season Tier</span>
+      </div>
+      <div class="card recent-games">
+        <div data-i18n="recent_20g">RECENT 20G</div>
+        <div class="winrate-container">
+          <div class="winrate-circle-bg"></div>
+          <div class="winrate-circle" id="winrate-circle"></div>
+          <div class="winrate-text" id="winrate-text"></div>
+        </div>
+        <div id="recent-stats"></div>
+      </div>
+      <div class="card champ-stats" id="champ-stats">
+        <div data-i18n="recent_20g_champions">RECENT 20G PLAYED CHAMPIONS</div>
+      </div>
+    </div>
+    <div id="mastery" class="mastery-section">
+      <h3 data-i18n="champion_mastery">Champion Mastery</h3>
+      <div class="mastery-grid" id="mastery-grid"></div>
+    </div>
+    <div id="matches">
+      <h3 data-i18n="match_history">Match History</h3>
+      <div id="match"></div>
+      <button id="show-more" data-i18n="show_more">Show More</button>
+    </div>
+    <div id="settings" class="settings-section">
+      <h3 data-i18n="settings">Settings</h3>
+      <div class="settings-option">
+        <label for="language" data-i18n="language">Language</label>
+        <select id="language">
+          <option value="en" data-i18n="english">English</option>
+          <option value="es" data-i18n="spanish">Spanish</option>
+          <option value="fr" data-i18n="french">French</option>
+        </select>
+      </div>
+      <div class="settings-option">
+        <label data-i18n="theme">Theme</label>
+        <button id="theme-toggle" data-i18n="toggle_theme">Toggle Dark/Light Mode</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let matchIndex = 0;
+    let matches = [];
+    let filteredMatches = [];
+    const container = document.getElementById('match');
+    const showMoreBtn = document.getElementById('show-more');
+    const tabs = document.querySelectorAll('.tab');
+    const playerCard = document.getElementById('player-card');
+    const rankText = document.getElementById('rank-text');
+    const winrateCircle = document.getElementById('winrate-circle');
+    const winrateText = document.getElementById('winrate-text');
+    const recentStats = document.getElementById('recent-stats');
+    const champStats = document.getElementById('champ-stats');
+    const masteryGrid = document.getElementById('mastery-grid');
+    const languageSelect = document.getElementById('language');
+    const themeToggle = document.getElementById('theme-toggle');
+
+    const translations = {
+      en: {
+        navigation: "Navigation",
+        summary: "Summary",
+        champion_mastery: "Champion Mastery",
+        match_history: "Match History",
+        settings: "Settings",
+        all_queues: "ALL",
+        ranked_solo_duo: "RANKED SOLO/DUO",
+        ranked_flex: "RANKED FLEX",
+        aram: "ARAM",
+        view_season_tier: "View Season Tier",
+        recent_20g: "RECENT 20G",
+        recent_20g_champions: "RECENT 20G PLAYED CHAMPIONS",
+        show_more: "Show More",
+        language: "Language",
+        english: "English",
+        spanish: "Spanish",
+        french: "French",
+        theme: "Theme",
+        toggle_theme: "Toggle Dark/Light Mode"
+      },
+      es: {
+        navigation: "Navegación",
+        summary: "Resumen",
+        champion_mastery: "Maestría de Campeones",
+        match_history: "Historial de Partidas",
+        settings: "Configuraciones",
+        all_queues: "TODAS",
+        ranked_solo_duo: "CLASIFICATORIA SOLO/DÚO",
+        ranked_flex: "CLASIFICATORIA FLEX",
+        aram: "ARAM",
+        view_season_tier: "Ver Nivel de Temporada",
+        recent_20g: "ÚLTIMAS 20 PARTIDAS",
+        recent_20g_champions: "CAMPEONES JUGADOS EN LAS ÚLTIMAS 20 PARTIDAS",
+        show_more: "Mostrar Más",
+        language: "Idioma",
+        english: "Inglés",
+        spanish: "Español",
+        french: "Francés",
+        theme: "Tema",
+        toggle_theme: "Cambiar Modo Oscuro/Claro"
+      },
+      fr: {
+        navigation: "Navigation",
+        summary: "Résumé",
+        champion_mastery: "Maîtrise des Champions",
+        match_history: "Historique des Matchs",
+        settings: "Paramètres",
+        all_queues: "TOUS",
+        ranked_solo_duo: "CLASSEMENT SOLO/DUO",
+        ranked_flex: "CLASSEMENT FLEX",
+        aram: "ARAM",
+        view_season_tier: "Voir le Niveau de Saison",
+        recent_20g: "20 DERNIERS MATCHS",
+        recent_20g_champions: "CHAMPIONS JOUÉS DANS LES 20 DERNIERS MATCHS",
+        show_more: "Afficher Plus",
+        language: "Langue",
+        english: "Anglais",
+        spanish: "Espagnol",
+        french: "Français",
+        theme: "Thème",
+        toggle_theme: "Basculer Mode Sombre/Clair"
+      }
+    };
+
+    function updateLanguage(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        element.textContent = translations[lang][key] || element.textContent;
+      });
+      document.documentElement.lang = lang;
+      localStorage.setItem('language', lang);
+    }
+
+    function toggleTheme() {
+      document.body.classList.toggle('light-mode');
+      const isLight = document.body.classList.contains('light-mode');
+      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    }
+
+    languageSelect.addEventListener('change', (e) => {
+      updateLanguage(e.target.value);
+    });
+
+    themeToggle.addEventListener('click', toggleTheme);
+
+    function loadPreferences() {
+      const savedLang = localStorage.getItem('language') || 'en';
+      const savedTheme = localStorage.getItem('theme') || 'dark';
+      languageSelect.value = savedLang;
+      if (savedTheme === 'light') {
+        document.body.classList.add('light-mode');
+      }
+      updateLanguage(savedLang);
+    }
+
+    function getDescriptor(kdaRatio) {
+      if (kdaRatio >= 5) return translations[languageSelect.value].mvp || 'MVP';
+      if (kdaRatio >= 3) return translations[languageSelect.value].resilient || 'Resilient';
+      if (kdaRatio >= 2) return translations[languageSelect.value].average || 'Average';
+      if (kdaRatio >= 1) return translations[languageSelect.value].struggling || 'Struggling';
+      return translations[languageSelect.value].feeder || 'Feeder';
+    }
+
+    fetch('riot_user_data.json')
+      .then(res => res.json())
+      .then(data => {
+        matches = data.matches.filter(m => [420, 440, 430].includes(m.info.queueId));
+        filteredMatches = matches;
+        const rankedData = data.ranked.find(r => r.queueType === "RANKED_SOLO_5x5");
+        const tierRank = rankedData ? `${rankedData.tier} ${rankedData.rank}` : 'Unranked';
+        const lp = rankedData ? rankedData.leaguePoints : 0;
+        const wins = rankedData ? rankedData.wins : 0;
+        const losses = rankedData ? rankedData.losses : 0;
+        const totalGames = wins + losses;
+        const winrate = totalGames > 0 ? ((wins / totalGames) * 100).toFixed(1) : '0';
+        const region = data.matches[0]?.metadata.matchId.split('_')[0].toUpperCase() || 'OC1';
+        const participant = data.matches[0]?.info.participants.find(p => p.puuid === data.puuid);
+        if (participant) {
+          const kdaRatio = participant.deaths === 0 ? (participant.kills + participant.assists) : (participant.kills + participant.assists) / participant.deaths;
+          playerCard.innerHTML = `
+            <img src="https://ddragon.leagueoflegends.com/cdn/14.9.1/img/profileicon/${data.summoner.profileIconId}.png" alt="Summoner Avatar" class="avatar" />
+            <div class="info">
+              <strong>${data.account.gameName}#${data.account.tagLine}</strong>
+              <div class="stats">
+                <span class="rank">${tierRank} • ${lp} LP</span>
+                <span class="winrate">Winrate: ${winrate}%</span>
+              </div>
+            </div>
+          `;
+          rankText.innerHTML = `${tierRank} • ${lp} LP`;
+          winrateText.innerHTML = `${winrate}%`;
+          const winrateDeg = (winrate / 100) * 360;
+          winrateCircle.style.background = `conic-gradient(#1abc9c ${winrateDeg}deg, #e74c3c ${winrateDeg}deg 360deg)`;
+          recentStats.innerHTML = `${wins}W ${losses}L • ${kdaRatio.toFixed(2)}:1 KDA`;
+        }
+
+        // Populate champion stats
+        const playedChamps = {};
+        matches.slice(0, 20).forEach(match => {
+          const p = match.info.participants.find(p => p.puuid === data.puuid);
+          if (p) {
+            const champ = p.championName;
+            if (!playedChamps[champ]) {
+              playedChamps[champ] = { wins: 0, losses: 0, kills: 0, deaths: 0, assists: 0, games: 0 };
+            }
+            playedChamps[champ].games += 1;
+            if (p.win) playedChamps[champ].wins += 1;
+            else playedChamps[champ].losses += 1;
+            playedChamps[champ].kills += p.kills;
+            playedChamps[champ].deaths += p.deaths;
+            playedChamps[champ].assists += p.assists;
+          }
+        });
+
+        Object.keys(playedChamps).slice(0, 3).forEach(champ => {
+          const stats = playedChamps[champ];
+          const champWinrate = ((stats.wins / stats.games) * 100).toFixed(0);
+          const avgKda = stats.deaths === 0 ? (stats.kills + stats.assists) : (stats.kills + stats.assists) / stats.deaths;
+          const champDiv = document.createElement('div');
+          champDiv.className = 'champ';
+          champDiv.innerHTML = `
+            <img src="https://ddragon.leagueoflegends.com/cdn/14.9.1/img/champion/${champ}.png" alt="${champ}" />
+            <div>
+              <div>${champ} - ${champWinrate}% (${stats.wins}W / ${stats.losses}L)</div>
+              <div>${avgKda.toFixed(2)} KDA</div>
+            </div>
+          `;
+          champStats.appendChild(champDiv);
+        });
+
+        // Populate mastery (mock data since not provided in JSON)
+        const masteryData = [
+          { championName: 'Lux', level: 7, points: 52300 },
+          { championName: 'Akali', level: 5, points: 31200 },
+          { championName: 'Yasuo', level: 4, points: 18900 },
+          { championName: 'Caitlyn', level: 3, points: 15000 }
+        ];
+        masteryData.forEach(mastery => {
+          const masteryCard = document.createElement('div');
+          masteryCard.className = 'mastery-card';
+          masteryCard.innerHTML = `
+            <img src="https://ddragon.leagueoflegends.com/cdn/14.9.1/img/champion/${mastery.championName}.png" alt="${mastery.championName}" />
+            <div class="info">
+              <div>${mastery.championName}</div>
+              <div class="level">Level ${mastery.level}</div>
+              <div>${mastery.points.toLocaleString()} Points</div>
+            </div>
+          `;
+          masteryGrid.appendChild(masteryCard);
+        });
+
+        showNextMatches();
+        loadPreferences();
+      });
+
+    function filterMatches(queueId) {
+      container.querySelectorAll('.match-header, .match-details').forEach(el => el.remove());
+      matchIndex = 0;
+      if (queueId === 'all') {
+        filteredMatches = matches;
+      } else {
+        filteredMatches = matches.filter(m => m.info.queueId === parseInt(queueId));
+      }
+      showNextMatches();
+    }
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        filterMatches(tab.dataset.queue);
+      });
+    });
+
+    function showNextMatches(count = 5) {
+      const slice = filteredMatches.slice(matchIndex, matchIndex + count);
+      slice.forEach((match) => {
+        const participant = match.info.participants.find(p => p.puuid === 'a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw');
+        if (!participant) return;
+
+        const kdaRatio = participant.deaths === 0 ? (participant.kills + participant.assists) : (participant.kills + participant.assists) / participant.deaths;
+        const csPerMin = (participant.totalMinionsKilled / (participant.timePlayed / 60)).toFixed(1);
+        const gpm = (participant.goldEarned / (participant.timePlayed / 60)).toFixed(1);
+        const damageToChamps = participant.totalDamageDealtToChampions;
+        const visionScore = participant.visionScore || 0;
+        const laneMinions = participant.challenges?.laneMinionsFirst10Minutes ?? 0;
+
+        const block = document.createElement('div');
+        const header = document.createElement('div');
+        header.className = `match-header ${participant.win ? 'win' : 'loss'}`;
+        header.innerHTML = `
+          <div class="left">
+            <div class="champion" style="background-image:url('https://ddragon.leagueoflegends.com/cdn/14.9.1/img/champion/${participant.championName}.png')"></div>
+            <div class="details">
+              <strong>${participant.win ? translations[languageSelect.value].victory || 'Victory' : translations[languageSelect.value].defeat || 'Defeat'}</strong> • 
+              ${match.info.queueId === 420 ? translations[languageSelect.value].ranked_solo_duo : match.info.queueId === 440 ? translations[languageSelect.value].ranked_flex : translations[languageSelect.value].aram} • 
+              ${(match.info.gameDuration / 60).toFixed(1)} mins
+            </div>
+          </div>
+          <div class="stats">
+            <span>KDA: ${participant.kills}/${participant.deaths}/${participant.assists} (${kdaRatio.toFixed(2)})</span><br>
+            <span>CS: ${participant.totalMinionsKilled} (${csPerMin}/min)</span> • 
+            <span>GPM: ${gpm}</span><br>
+            <span>Damage: ${damageToChamps}</span> • 
+            <span>Vision: ${visionScore}</span>
+          </div>
+          <div class='arrow'>▼</div>
+        `;
+
+        const details = document.createElement('div');
+        details.className = 'match-details';
+        const teams = { 100: [], 200: [] };
+        match.info.participants.forEach(p => teams[p.teamId].push(p));
+
+        for (const teamId of [100, 200]) {
+          const team = teams[teamId];
+          const teamDiv = document.createElement('div');
+          teamDiv.className = 'team';
+          team.forEach(player => {
+            const playerDiv = document.createElement('div');
+            playerDiv.className = 'player';
+            const pKdaRatio = player.deaths === 0 ? (player.kills + player.assists) : (player.kills + player.assists) / player.deaths;
+            playerDiv.innerHTML = `
+              <div class="champion" style="background-image:url('https://ddragon.leagueoflegends.com/cdn/14.9.1/img/champion/${player.championName}.png')"></div>
+              <div class="player-name">${player.riotIdGameName || player.summonerName}</div>
+              <div class="kda"><span>${player.kills}/${player.deaths}/${player.assists}</span> (${pKdaRatio.toFixed(2)} KDA)</div>
+              <div class="cs"><span>CS: ${player.totalMinionsKilled}</span> (${(player.totalMinionsKilled / (player.timePlayed / 60)).toFixed(1)}/min)</div>
+              <div class="lane"><span>Laning: ${player.challenges?.laneMinionsFirst10Minutes ?? 0}</span></div>
+              <div class="gold"><span>Gold: ${player.goldEarned}</span></div>
+              <div class="gold"><span>GPM: ${(player.goldEarned / (player.timePlayed / 60)).toFixed(1)}</span></div>
+              <div class="vision"><span>Vision: ${player.visionScore || 0}</span></div>
+              <div class="damage"><span>Damage: ${player.totalDamageDealtToChampions || 0}</span></div>
+              <div class="descriptor">${getDescriptor(pKdaRatio)}</div>
+              <div class="items">${
+                [0,1,2,3,4,5,6].map(i => {
+                  const id = player[`item${i}`];
+                  return id > 0 ? `<img src="https://ddragon.leagueoflegends.com/cdn/14.9.1/img/item/${id}.png" onerror="this.style.display='none'">` : '';
+                }).join('')
+              }</div>
+            `;
+            teamDiv.appendChild(playerDiv);
+          });
+          details.appendChild(teamDiv);
+        }
+
+        block.appendChild(header);
+        block.appendChild(details);
+        container.appendChild(block);
+
+        header.addEventListener('click', () => {
+          const visible = details.style.display === 'block';
+          details.style.display = visible ? 'none' : 'block';
+          header.querySelector('.arrow').textContent = visible ? '▼' : '▲';
+        });
+      });
+
+      matchIndex += count;
+      if (matchIndex >= filteredMatches.length) {
+        showMoreBtn.style.display = 'none';
+      }
+    }
+
+    showMoreBtn.addEventListener('click', () => showNextMatches());
+  </script>
+</body>
+</html>

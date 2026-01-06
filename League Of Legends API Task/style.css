@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input, select {
+    margin-right: 20px;
+}
+
+.match {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.kda {
+    font-weight: bold;
+}
+
+.kda.good {
+    color: green;
+}
+
+.kda.average {
+    color: orange;
+}
+
+.kda.bad {
+    color: red;
+}
+
+.winrate.good {
+    color: green;
+}
+
+.winrate.average {
+    color: orange;
+}
+
+.winrate.bad {
+    color: red;
+}
+
+.team {
+    margin-top: 10px;
+}
+
+.team h4 {
+    margin-bottom: 5px;
+}
+
+.team ul {
+    list-style-type: none;
+    padding-left: 0;
+}

@@ -1,0 +1,3318 @@
+[
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 51,
+    "championLevel": 25,
+    "championPoints": 291020,
+    "lastPlayTime": 1747751362000,
+    "championPointsSinceLastLevel": 50420,
+    "championPointsUntilNextLevel": -39420,
+    "markRequiredForNextLevel": 2,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "D+",
+      "C+"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 267,
+    "championLevel": 27,
+    "championPoints": 267748,
+    "lastPlayTime": 1747836324000,
+    "championPointsSinceLastLevel": 5148,
+    "championPointsUntilNextLevel": 5852,
+    "markRequiredForNextLevel": 2,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 3,
+    "milestoneGrades": [],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "S-": 1
+      },
+      "rewardMarks": 2,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 99,
+    "championLevel": 15,
+    "championPoints": 183742,
+    "lastPlayTime": 1747756102000,
+    "championPointsSinceLastLevel": 53142,
+    "championPointsUntilNextLevel": -42142,
+    "markRequiredForNextLevel": 2,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 1,
+    "milestoneGrades": [],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 81,
+    "championLevel": 13,
+    "championPoints": 149403,
+    "lastPlayTime": 1747498541000,
+    "championPointsSinceLastLevel": 40803,
+    "championPointsUntilNextLevel": -29803,
+    "markRequiredForNextLevel": 2,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 2,
+    "milestoneGrades": [],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "S-": 1
+      },
+      "rewardMarks": 2,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 25,
+    "championLevel": 11,
+    "championPoints": 134369,
+    "lastPlayTime": 1747731409000,
+    "championPointsSinceLastLevel": 47769,
+    "championPointsUntilNextLevel": -36769,
+    "markRequiredForNextLevel": 2,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "C+"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 28,
+    "championLevel": 11,
+    "championPoints": 133080,
+    "lastPlayTime": 1746973773000,
+    "championPointsSinceLastLevel": 46480,
+    "championPointsUntilNextLevel": -35480,
+    "markRequiredForNextLevel": 2,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 1,
+    "milestoneGrades": [],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 202,
+    "championLevel": 9,
+    "championPoints": 100550,
+    "lastPlayTime": 1747492410000,
+    "championPointsSinceLastLevel": 35950,
+    "championPointsUntilNextLevel": -24950,
+    "markRequiredForNextLevel": 2,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "B-"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 360,
+    "championLevel": 10,
+    "championPoints": 95150,
+    "lastPlayTime": 1747289769000,
+    "championPointsSinceLastLevel": 19550,
+    "championPointsUntilNextLevel": -8550,
+    "markRequiredForNextLevel": 2,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "C+"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 497,
+    "championLevel": 10,
+    "championPoints": 92440,
+    "lastPlayTime": 1746459332000,
+    "championPointsSinceLastLevel": 16840,
+    "championPointsUntilNextLevel": -5840,
+    "markRequiredForNextLevel": 2,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "B"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 518,
+    "championLevel": 10,
+    "championPoints": 92192,
+    "lastPlayTime": 1747489550000,
+    "championPointsSinceLastLevel": 16592,
+    "championPointsUntilNextLevel": -5592,
+    "markRequiredForNextLevel": 2,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "D+"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 22,
+    "championLevel": 9,
+    "championPoints": 79374,
+    "lastPlayTime": 1743951999000,
+    "championPointsSinceLastLevel": 14774,
+    "championPointsUntilNextLevel": -3774,
+    "markRequiredForNextLevel": 2,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 236,
+    "championLevel": 8,
+    "championPoints": 76176,
+    "lastPlayTime": 1744203043000,
+    "championPointsSinceLastLevel": 22576,
+    "championPointsUntilNextLevel": -11576,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 84,
+    "championLevel": 8,
+    "championPoints": 71114,
+    "lastPlayTime": 1737037026000,
+    "championPointsSinceLastLevel": 17514,
+    "championPointsUntilNextLevel": -6514,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 498,
+    "championLevel": 7,
+    "championPoints": 70752,
+    "lastPlayTime": 1743955261000,
+    "championPointsSinceLastLevel": 28152,
+    "championPointsUntilNextLevel": -17152,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 147,
+    "championLevel": 9,
+    "championPoints": 66970,
+    "lastPlayTime": 1747490413000,
+    "championPointsSinceLastLevel": 2370,
+    "championPointsUntilNextLevel": 8630,
+    "markRequiredForNextLevel": 2,
+    "tokensEarned": 3,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "C"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 21,
+    "championLevel": 9,
+    "championPoints": 66342,
+    "lastPlayTime": 1747491427000,
+    "championPointsSinceLastLevel": 1742,
+    "championPointsUntilNextLevel": 9258,
+    "markRequiredForNextLevel": 2,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "B+"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 222,
+    "championLevel": 8,
+    "championPoints": 62496,
+    "lastPlayTime": 1747750132000,
+    "championPointsSinceLastLevel": 8896,
+    "championPointsUntilNextLevel": 2104,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 2,
+    "championSeasonMilestone": 1,
+    "milestoneGrades": [],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 40,
+    "championLevel": 7,
+    "championPoints": 60542,
+    "lastPlayTime": 1747753883000,
+    "championPointsSinceLastLevel": 17942,
+    "championPointsUntilNextLevel": -6942,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "C-",
+      "C+"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 350,
+    "championLevel": 7,
+    "championPoints": 53508,
+    "lastPlayTime": 1743349890000,
+    "championPointsSinceLastLevel": 10908,
+    "championPointsUntilNextLevel": 92,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 2,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 235,
+    "championLevel": 7,
+    "championPoints": 53083,
+    "lastPlayTime": 1747758487000,
+    "championPointsSinceLastLevel": 10483,
+    "championPointsUntilNextLevel": 517,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 1,
+    "milestoneGrades": [],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 29,
+    "championLevel": 7,
+    "championPoints": 51271,
+    "lastPlayTime": 1747495369000,
+    "championPointsSinceLastLevel": 8671,
+    "championPointsUntilNextLevel": 2329,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 2,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "B+"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 67,
+    "championLevel": 7,
+    "championPoints": 51184,
+    "lastPlayTime": 1747831110000,
+    "championPointsSinceLastLevel": 8584,
+    "championPointsUntilNextLevel": 2416,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "B+"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 117,
+    "championLevel": 7,
+    "championPoints": 48583,
+    "lastPlayTime": 1747736016000,
+    "championPointsSinceLastLevel": 5983,
+    "championPointsUntilNextLevel": 5017,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 2,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "C+",
+      "B",
+      "C+"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 145,
+    "championLevel": 7,
+    "championPoints": 46595,
+    "lastPlayTime": 1747034651000,
+    "championPointsSinceLastLevel": 3995,
+    "championPointsUntilNextLevel": 7005,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 1,
+    "milestoneGrades": [],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 523,
+    "championLevel": 7,
+    "championPoints": 44254,
+    "lastPlayTime": 1740625146000,
+    "championPointsSinceLastLevel": 1654,
+    "championPointsUntilNextLevel": 9346,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 2,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 142,
+    "championLevel": 6,
+    "championPoints": 41722,
+    "lastPlayTime": 1742483913000,
+    "championPointsSinceLastLevel": 10122,
+    "championPointsUntilNextLevel": 878,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 555,
+    "championLevel": 6,
+    "championPoints": 38190,
+    "lastPlayTime": 1747301807000,
+    "championPointsSinceLastLevel": 6590,
+    "championPointsUntilNextLevel": 4410,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 2,
+    "championSeasonMilestone": 1,
+    "milestoneGrades": [],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 110,
+    "championLevel": 6,
+    "championPoints": 36096,
+    "lastPlayTime": 1744205019000,
+    "championPointsSinceLastLevel": 4496,
+    "championPointsUntilNextLevel": 6504,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 7,
+    "championLevel": 5,
+    "championPoints": 29440,
+    "lastPlayTime": 1743947936000,
+    "championPointsSinceLastLevel": 7840,
+    "championPointsUntilNextLevel": 2160,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 103,
+    "championLevel": 5,
+    "championPoints": 28700,
+    "lastPlayTime": 1747838400000,
+    "championPointsSinceLastLevel": 7100,
+    "championPointsUntilNextLevel": 2900,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 1,
+    "milestoneGrades": [],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 34,
+    "championLevel": 5,
+    "championPoints": 27897,
+    "lastPlayTime": 1742637782000,
+    "championPointsSinceLastLevel": 6297,
+    "championPointsUntilNextLevel": 3703,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 2,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 143,
+    "championLevel": 6,
+    "championPoints": 26836,
+    "lastPlayTime": 1742913596000,
+    "championPointsSinceLastLevel": 0,
+    "championPointsUntilNextLevel": 15764,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 43,
+    "championLevel": 5,
+    "championPoints": 25844,
+    "lastPlayTime": 1741934129000,
+    "championPointsSinceLastLevel": 4244,
+    "championPointsUntilNextLevel": 5756,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 246,
+    "championLevel": 6,
+    "championPoints": 25682,
+    "lastPlayTime": 1733809966000,
+    "championPointsSinceLastLevel": 0,
+    "championPointsUntilNextLevel": 16918,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 429,
+    "championLevel": 4,
+    "championPoints": 25261,
+    "lastPlayTime": 1737516104000,
+    "championPointsSinceLastLevel": 12661,
+    "championPointsUntilNextLevel": -3661,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 39,
+    "championLevel": 5,
+    "championPoints": 24675,
+    "lastPlayTime": 1747305907000,
+    "championPointsSinceLastLevel": 3075,
+    "championPointsUntilNextLevel": 6925,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "C"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 18,
+    "championLevel": 4,
+    "championPoints": 24317,
+    "lastPlayTime": 1742398454000,
+    "championPointsSinceLastLevel": 11717,
+    "championPointsUntilNextLevel": -2717,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 902,
+    "championLevel": 4,
+    "championPoints": 22138,
+    "lastPlayTime": 1733571826000,
+    "championPointsSinceLastLevel": 9538,
+    "championPointsUntilNextLevel": -538,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 45,
+    "championLevel": 5,
+    "championPoints": 21694,
+    "lastPlayTime": 1713104898000,
+    "championPointsSinceLastLevel": 94,
+    "championPointsUntilNextLevel": 9906,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 50,
+    "championLevel": 4,
+    "championPoints": 20842,
+    "lastPlayTime": 1743168347000,
+    "championPointsSinceLastLevel": 8242,
+    "championPointsUntilNextLevel": 758,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 2,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 221,
+    "championLevel": 4,
+    "championPoints": 19532,
+    "lastPlayTime": 1742642769000,
+    "championPointsSinceLastLevel": 6932,
+    "championPointsUntilNextLevel": 2068,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 427,
+    "championLevel": 4,
+    "championPoints": 19495,
+    "lastPlayTime": 1747300442000,
+    "championPointsSinceLastLevel": 6895,
+    "championPointsUntilNextLevel": 2105,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "C+"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 111,
+    "championLevel": 4,
+    "championPoints": 19477,
+    "lastPlayTime": 1743779280000,
+    "championPointsSinceLastLevel": 6877,
+    "championPointsUntilNextLevel": 2123,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 69,
+    "championLevel": 4,
+    "championPoints": 17686,
+    "lastPlayTime": 1742732302000,
+    "championPointsSinceLastLevel": 5086,
+    "championPointsUntilNextLevel": 3914,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 20,
+    "championLevel": 4,
+    "championPoints": 17286,
+    "lastPlayTime": 1743600457000,
+    "championPointsSinceLastLevel": 4686,
+    "championPointsUntilNextLevel": 4314,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 16,
+    "championLevel": 4,
+    "championPoints": 17251,
+    "lastPlayTime": 1746978022000,
+    "championPointsSinceLastLevel": 4651,
+    "championPointsUntilNextLevel": 4349,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "C-"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 895,
+    "championLevel": 4,
+    "championPoints": 17156,
+    "lastPlayTime": 1740060238000,
+    "championPointsSinceLastLevel": 4556,
+    "championPointsUntilNextLevel": 4444,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 131,
+    "championLevel": 4,
+    "championPoints": 16832,
+    "lastPlayTime": 1714047345000,
+    "championPointsSinceLastLevel": 4232,
+    "championPointsUntilNextLevel": 4768,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 92,
+    "championLevel": 4,
+    "championPoints": 16787,
+    "lastPlayTime": 1746975976000,
+    "championPointsSinceLastLevel": 4187,
+    "championPointsUntilNextLevel": 4813,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "D+"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 55,
+    "championLevel": 4,
+    "championPoints": 16713,
+    "lastPlayTime": 1741321546000,
+    "championPointsSinceLastLevel": 4113,
+    "championPointsUntilNextLevel": 4887,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 203,
+    "championLevel": 4,
+    "championPoints": 16702,
+    "lastPlayTime": 1747303884000,
+    "championPointsSinceLastLevel": 4102,
+    "championPointsUntilNextLevel": 4898,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 1,
+    "milestoneGrades": [
+      "C"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 245,
+    "championLevel": 4,
+    "championPoints": 15617,
+    "lastPlayTime": 1742396683000,
+    "championPointsSinceLastLevel": 3017,
+    "championPointsUntilNextLevel": 5983,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 37,
+    "championLevel": 4,
+    "championPoints": 15589,
+    "lastPlayTime": 1747239948000,
+    "championPointsSinceLastLevel": 2989,
+    "championPointsUntilNextLevel": 6011,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "C+"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 141,
+    "championLevel": 4,
+    "championPoints": 15230,
+    "lastPlayTime": 1747288435000,
+    "championPointsSinceLastLevel": 2630,
+    "championPointsUntilNextLevel": 6370,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "C-"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 412,
+    "championLevel": 4,
+    "championPoints": 14815,
+    "lastPlayTime": 1716900341000,
+    "championPointsSinceLastLevel": 2215,
+    "championPointsUntilNextLevel": 6785,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 888,
+    "championLevel": 4,
+    "championPoints": 14189,
+    "lastPlayTime": 1746723961000,
+    "championPointsSinceLastLevel": 1589,
+    "championPointsUntilNextLevel": 7411,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 2,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "D+"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 1,
+    "championLevel": 4,
+    "championPoints": 14047,
+    "lastPlayTime": 1742141924000,
+    "championPointsSinceLastLevel": 1447,
+    "championPointsUntilNextLevel": 7553,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 89,
+    "championLevel": 4,
+    "championPoints": 14042,
+    "lastPlayTime": 1744200299000,
+    "championPointsSinceLastLevel": 1442,
+    "championPointsUntilNextLevel": 7558,
+    "markRequiredForNextLevel": 1,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 53,
+    "championLevel": 3,
+    "championPoints": 11892,
+    "lastPlayTime": 1733835449000,
+    "championPointsSinceLastLevel": 5892,
+    "championPointsUntilNextLevel": 708,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 17,
+    "championLevel": 3,
+    "championPoints": 11211,
+    "lastPlayTime": 1742224343000,
+    "championPointsSinceLastLevel": 5211,
+    "championPointsUntilNextLevel": 1389,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 96,
+    "championLevel": 3,
+    "championPoints": 11203,
+    "lastPlayTime": 1746971408000,
+    "championPointsSinceLastLevel": 5203,
+    "championPointsUntilNextLevel": 1397,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "B+"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 127,
+    "championLevel": 3,
+    "championPoints": 10952,
+    "lastPlayTime": 1746626080000,
+    "championPointsSinceLastLevel": 4952,
+    "championPointsUntilNextLevel": 1648,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "C-"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 119,
+    "championLevel": 3,
+    "championPoints": 10383,
+    "lastPlayTime": 1746632100000,
+    "championPointsSinceLastLevel": 4383,
+    "championPointsUntilNextLevel": 2217,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "C"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 887,
+    "championLevel": 3,
+    "championPoints": 10269,
+    "lastPlayTime": 1744206637000,
+    "championPointsSinceLastLevel": 4269,
+    "championPointsUntilNextLevel": 2331,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 76,
+    "championLevel": 3,
+    "championPoints": 9078,
+    "lastPlayTime": 1742830411000,
+    "championPointsSinceLastLevel": 3078,
+    "championPointsUntilNextLevel": 3522,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 777,
+    "championLevel": 3,
+    "championPoints": 8859,
+    "lastPlayTime": 1747416414000,
+    "championPointsSinceLastLevel": 2859,
+    "championPointsUntilNextLevel": 3741,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "B"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 166,
+    "championLevel": 3,
+    "championPoints": 8831,
+    "lastPlayTime": 1736852352000,
+    "championPointsSinceLastLevel": 2831,
+    "championPointsUntilNextLevel": 3769,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 711,
+    "championLevel": 3,
+    "championPoints": 8202,
+    "lastPlayTime": 1733053665000,
+    "championPointsSinceLastLevel": 2202,
+    "championPointsUntilNextLevel": 4398,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 876,
+    "championLevel": 3,
+    "championPoints": 8065,
+    "lastPlayTime": 1729404189000,
+    "championPointsSinceLastLevel": 2065,
+    "championPointsUntilNextLevel": 4535,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 157,
+    "championLevel": 3,
+    "championPoints": 7605,
+    "lastPlayTime": 1743593894000,
+    "championPointsSinceLastLevel": 1605,
+    "championPointsUntilNextLevel": 4995,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 15,
+    "championLevel": 3,
+    "championPoints": 7361,
+    "lastPlayTime": 1744027966000,
+    "championPointsSinceLastLevel": 1361,
+    "championPointsUntilNextLevel": 5239,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 517,
+    "championLevel": 3,
+    "championPoints": 7126,
+    "lastPlayTime": 1730610903000,
+    "championPointsSinceLastLevel": 1126,
+    "championPointsUntilNextLevel": 5474,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 11,
+    "championLevel": 3,
+    "championPoints": 6846,
+    "lastPlayTime": 1741324411000,
+    "championPointsSinceLastLevel": 846,
+    "championPointsUntilNextLevel": 5754,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 10,
+    "championLevel": 3,
+    "championPoints": 6684,
+    "lastPlayTime": 1742306820000,
+    "championPointsSinceLastLevel": 684,
+    "championPointsUntilNextLevel": 5916,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 32,
+    "championLevel": 3,
+    "championPoints": 6506,
+    "lastPlayTime": 1718011594000,
+    "championPointsSinceLastLevel": 506,
+    "championPointsUntilNextLevel": 6094,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 901,
+    "championLevel": 3,
+    "championPoints": 6383,
+    "lastPlayTime": 1743344429000,
+    "championPointsSinceLastLevel": 383,
+    "championPointsUntilNextLevel": 6217,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 63,
+    "championLevel": 3,
+    "championPoints": 6069,
+    "lastPlayTime": 1700572400000,
+    "championPointsSinceLastLevel": 69,
+    "championPointsUntilNextLevel": 6531,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 136,
+    "championLevel": 2,
+    "championPoints": 5906,
+    "lastPlayTime": 1746624550000,
+    "championPointsSinceLastLevel": 4106,
+    "championPointsUntilNextLevel": 94,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "B"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 134,
+    "championLevel": 2,
+    "championPoints": 5686,
+    "lastPlayTime": 1743257580000,
+    "championPointsSinceLastLevel": 3886,
+    "championPointsUntilNextLevel": 314,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 74,
+    "championLevel": 2,
+    "championPoints": 5173,
+    "lastPlayTime": 1742482124000,
+    "championPointsSinceLastLevel": 3373,
+    "championPointsUntilNextLevel": 827,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 2,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 163,
+    "championLevel": 2,
+    "championPoints": 5123,
+    "lastPlayTime": 1743086899000,
+    "championPointsSinceLastLevel": 3323,
+    "championPointsUntilNextLevel": 877,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 64,
+    "championLevel": 2,
+    "championPoints": 5058,
+    "lastPlayTime": 1743785728000,
+    "championPointsSinceLastLevel": 3258,
+    "championPointsUntilNextLevel": 942,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 59,
+    "championLevel": 2,
+    "championPoints": 5012,
+    "lastPlayTime": 1688553287000,
+    "championPointsSinceLastLevel": 3212,
+    "championPointsUntilNextLevel": 988,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 268,
+    "championLevel": 2,
+    "championPoints": 4552,
+    "lastPlayTime": 1743081272000,
+    "championPointsSinceLastLevel": 2752,
+    "championPointsUntilNextLevel": 1448,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 80,
+    "championLevel": 2,
+    "championPoints": 4407,
+    "lastPlayTime": 1709449470000,
+    "championPointsSinceLastLevel": 2607,
+    "championPointsUntilNextLevel": 1593,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 254,
+    "championLevel": 2,
+    "championPoints": 4373,
+    "lastPlayTime": 1733827786000,
+    "championPointsSinceLastLevel": 2573,
+    "championPointsUntilNextLevel": 1627,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 133,
+    "championLevel": 2,
+    "championPoints": 4007,
+    "lastPlayTime": 1688467685000,
+    "championPointsSinceLastLevel": 2207,
+    "championPointsUntilNextLevel": 1993,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 82,
+    "championLevel": 2,
+    "championPoints": 3871,
+    "lastPlayTime": 1691588026000,
+    "championPointsSinceLastLevel": 2071,
+    "championPointsUntilNextLevel": 2129,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 114,
+    "championLevel": 2,
+    "championPoints": 3853,
+    "lastPlayTime": 1732450988000,
+    "championPointsSinceLastLevel": 2053,
+    "championPointsUntilNextLevel": 2147,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 201,
+    "championLevel": 2,
+    "championPoints": 3670,
+    "lastPlayTime": 1737008875000,
+    "championPointsSinceLastLevel": 1870,
+    "championPointsUntilNextLevel": 2330,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 526,
+    "championLevel": 2,
+    "championPoints": 3626,
+    "lastPlayTime": 1736776483000,
+    "championPointsSinceLastLevel": 1826,
+    "championPointsUntilNextLevel": 2374,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 234,
+    "championLevel": 2,
+    "championPoints": 3615,
+    "lastPlayTime": 1733051923000,
+    "championPointsSinceLastLevel": 1815,
+    "championPointsUntilNextLevel": 2385,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 101,
+    "championLevel": 2,
+    "championPoints": 3514,
+    "lastPlayTime": 1700564389000,
+    "championPointsSinceLastLevel": 1714,
+    "championPointsUntilNextLevel": 2486,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 113,
+    "championLevel": 2,
+    "championPoints": 3401,
+    "lastPlayTime": 1742644384000,
+    "championPointsSinceLastLevel": 1601,
+    "championPointsUntilNextLevel": 2599,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 13,
+    "championLevel": 2,
+    "championPoints": 3192,
+    "lastPlayTime": 1667275304000,
+    "championPointsSinceLastLevel": 1392,
+    "championPointsUntilNextLevel": 2808,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 35,
+    "championLevel": 2,
+    "championPoints": 3144,
+    "lastPlayTime": 1710062659000,
+    "championPointsSinceLastLevel": 1344,
+    "championPointsUntilNextLevel": 2856,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 9,
+    "championLevel": 2,
+    "championPoints": 3126,
+    "lastPlayTime": 1690728774000,
+    "championPointsSinceLastLevel": 1326,
+    "championPointsUntilNextLevel": 2874,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 800,
+    "championLevel": 2,
+    "championPoints": 2959,
+    "lastPlayTime": 1742728161000,
+    "championPointsSinceLastLevel": 1159,
+    "championPointsUntilNextLevel": 3041,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 42,
+    "championLevel": 2,
+    "championPoints": 2714,
+    "lastPlayTime": 1733229894000,
+    "championPointsSinceLastLevel": 914,
+    "championPointsUntilNextLevel": 3286,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 164,
+    "championLevel": 2,
+    "championPoints": 2674,
+    "lastPlayTime": 1732709266000,
+    "championPointsSinceLastLevel": 874,
+    "championPointsUntilNextLevel": 3326,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 266,
+    "championLevel": 2,
+    "championPoints": 2671,
+    "lastPlayTime": 1742220797000,
+    "championPointsSinceLastLevel": 871,
+    "championPointsUntilNextLevel": 3329,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 61,
+    "championLevel": 2,
+    "championPoints": 2549,
+    "lastPlayTime": 1743170449000,
+    "championPointsSinceLastLevel": 749,
+    "championPointsUntilNextLevel": 3451,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 85,
+    "championLevel": 2,
+    "championPoints": 2480,
+    "lastPlayTime": 1743088275000,
+    "championPointsSinceLastLevel": 680,
+    "championPointsUntilNextLevel": 3520,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 115,
+    "championLevel": 2,
+    "championPoints": 2378,
+    "lastPlayTime": 1671167977000,
+    "championPointsSinceLastLevel": 578,
+    "championPointsUntilNextLevel": 3622,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 112,
+    "championLevel": 2,
+    "championPoints": 2291,
+    "lastPlayTime": 1746716522000,
+    "championPointsSinceLastLevel": 491,
+    "championPointsUntilNextLevel": 3709,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 1,
+    "milestoneGrades": [],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 62,
+    "championLevel": 2,
+    "championPoints": 2220,
+    "lastPlayTime": 1742391939000,
+    "championPointsSinceLastLevel": 420,
+    "championPointsUntilNextLevel": 3780,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 161,
+    "championLevel": 2,
+    "championPoints": 2168,
+    "lastPlayTime": 1743580028000,
+    "championPointsSinceLastLevel": 368,
+    "championPointsUntilNextLevel": 3832,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 30,
+    "championLevel": 2,
+    "championPoints": 2141,
+    "lastPlayTime": 1746721061000,
+    "championPointsSinceLastLevel": 341,
+    "championPointsUntilNextLevel": 3859,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "B"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 31,
+    "championLevel": 2,
+    "championPoints": 2122,
+    "lastPlayTime": 1742013477000,
+    "championPointsSinceLastLevel": 322,
+    "championPointsUntilNextLevel": 3878,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 105,
+    "championLevel": 2,
+    "championPoints": 2034,
+    "lastPlayTime": 1742834078000,
+    "championPointsSinceLastLevel": 234,
+    "championPointsUntilNextLevel": 3966,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 126,
+    "championLevel": 2,
+    "championPoints": 2031,
+    "lastPlayTime": 1743787469000,
+    "championPointsSinceLastLevel": 231,
+    "championPointsUntilNextLevel": 3969,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 223,
+    "championLevel": 2,
+    "championPoints": 1843,
+    "lastPlayTime": 1649601794000,
+    "championPointsSinceLastLevel": 43,
+    "championPointsUntilNextLevel": 4157,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 432,
+    "championLevel": 1,
+    "championPoints": 1777,
+    "lastPlayTime": 1742133870000,
+    "championPointsSinceLastLevel": 1777,
+    "championPointsUntilNextLevel": 23,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 8,
+    "championLevel": 1,
+    "championPoints": 1752,
+    "lastPlayTime": 1746722632000,
+    "championPointsSinceLastLevel": 1752,
+    "championPointsUntilNextLevel": 48,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "milestoneGrades": [
+      "C-"
+    ],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 4,
+    "championLevel": 1,
+    "championPoints": 1708,
+    "lastPlayTime": 1707579000000,
+    "championPointsSinceLastLevel": 1708,
+    "championPointsUntilNextLevel": 92,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 875,
+    "championLevel": 1,
+    "championPoints": 1629,
+    "lastPlayTime": 1741329914000,
+    "championPointsSinceLastLevel": 1629,
+    "championPointsUntilNextLevel": 171,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 12,
+    "championLevel": 1,
+    "championPoints": 1523,
+    "lastPlayTime": 1730628621000,
+    "championPointsSinceLastLevel": 1523,
+    "championPointsUntilNextLevel": 277,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 86,
+    "championLevel": 1,
+    "championPoints": 1500,
+    "lastPlayTime": 1743595769000,
+    "championPointsSinceLastLevel": 1500,
+    "championPointsUntilNextLevel": 300,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 150,
+    "championLevel": 1,
+    "championPoints": 1489,
+    "lastPlayTime": 1742641125000,
+    "championPointsSinceLastLevel": 1489,
+    "championPointsUntilNextLevel": 311,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 122,
+    "championLevel": 1,
+    "championPoints": 1417,
+    "lastPlayTime": 1742018187000,
+    "championPointsSinceLastLevel": 1417,
+    "championPointsUntilNextLevel": 383,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 104,
+    "championLevel": 1,
+    "championPoints": 1396,
+    "lastPlayTime": 1743599049000,
+    "championPointsSinceLastLevel": 1396,
+    "championPointsUntilNextLevel": 404,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 420,
+    "championLevel": 1,
+    "championPoints": 1289,
+    "lastPlayTime": 1630310532000,
+    "championPointsSinceLastLevel": 1289,
+    "championPointsUntilNextLevel": 511,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 102,
+    "championLevel": 1,
+    "championPoints": 1231,
+    "lastPlayTime": 1741951037000,
+    "championPointsSinceLastLevel": 1231,
+    "championPointsUntilNextLevel": 569,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 6,
+    "championLevel": 1,
+    "championPoints": 1215,
+    "lastPlayTime": 1746718461000,
+    "championPointsSinceLastLevel": 1215,
+    "championPointsUntilNextLevel": 585,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 1,
+    "milestoneGrades": [],
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 78,
+    "championLevel": 1,
+    "championPoints": 1174,
+    "lastPlayTime": 1741326110000,
+    "championPointsSinceLastLevel": 1174,
+    "championPointsUntilNextLevel": 626,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 154,
+    "championLevel": 1,
+    "championPoints": 1090,
+    "lastPlayTime": 1732026453000,
+    "championPointsSinceLastLevel": 1090,
+    "championPointsUntilNextLevel": 710,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 23,
+    "championLevel": 1,
+    "championPoints": 1066,
+    "lastPlayTime": 1743788843000,
+    "championPointsSinceLastLevel": 1066,
+    "championPointsUntilNextLevel": 734,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 1,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 910,
+    "championLevel": 1,
+    "championPoints": 1059,
+    "lastPlayTime": 1712398576000,
+    "championPointsSinceLastLevel": 1059,
+    "championPointsUntilNextLevel": 741,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 200,
+    "championLevel": 1,
+    "championPoints": 986,
+    "lastPlayTime": 1713427392000,
+    "championPointsSinceLastLevel": 986,
+    "championPointsUntilNextLevel": 814,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 2,
+    "championLevel": 1,
+    "championPoints": 979,
+    "lastPlayTime": 1742479253000,
+    "championPointsSinceLastLevel": 979,
+    "championPointsUntilNextLevel": 821,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 44,
+    "championLevel": 1,
+    "championPoints": 915,
+    "lastPlayTime": 1742399852000,
+    "championPointsSinceLastLevel": 915,
+    "championPointsUntilNextLevel": 885,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 893,
+    "championLevel": 1,
+    "championPoints": 814,
+    "lastPlayTime": 1733811186000,
+    "championPointsSinceLastLevel": 814,
+    "championPointsUntilNextLevel": 986,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 27,
+    "championLevel": 1,
+    "championPoints": 795,
+    "lastPlayTime": 1742312199000,
+    "championPointsSinceLastLevel": 795,
+    "championPointsUntilNextLevel": 1005,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 233,
+    "championLevel": 1,
+    "championPoints": 777,
+    "lastPlayTime": 1711122459000,
+    "championPointsSinceLastLevel": 777,
+    "championPointsUntilNextLevel": 1023,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 60,
+    "championLevel": 1,
+    "championPoints": 727,
+    "lastPlayTime": 1635250180000,
+    "championPointsSinceLastLevel": 727,
+    "championPointsUntilNextLevel": 1073,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 58,
+    "championLevel": 1,
+    "championPoints": 688,
+    "lastPlayTime": 1617756339000,
+    "championPointsSinceLastLevel": 688,
+    "championPointsUntilNextLevel": 1112,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 83,
+    "championLevel": 1,
+    "championPoints": 684,
+    "lastPlayTime": 1637229279000,
+    "championPointsSinceLastLevel": 684,
+    "championPointsUntilNextLevel": 1116,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 38,
+    "championLevel": 1,
+    "championPoints": 671,
+    "lastPlayTime": 1627471244000,
+    "championPointsSinceLastLevel": 671,
+    "championPointsUntilNextLevel": 1129,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 106,
+    "championLevel": 1,
+    "championPoints": 665,
+    "lastPlayTime": 1649593571000,
+    "championPointsSinceLastLevel": 665,
+    "championPointsUntilNextLevel": 1135,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 516,
+    "championLevel": 1,
+    "championPoints": 639,
+    "lastPlayTime": 1684825848000,
+    "championPointsSinceLastLevel": 639,
+    "championPointsUntilNextLevel": 1161,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 79,
+    "championLevel": 1,
+    "championPoints": 601,
+    "lastPlayTime": 1742310311000,
+    "championPointsSinceLastLevel": 601,
+    "championPointsUntilNextLevel": 1199,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 107,
+    "championLevel": 1,
+    "championPoints": 590,
+    "lastPlayTime": 1742634261000,
+    "championPointsSinceLastLevel": 590,
+    "championPointsUntilNextLevel": 1210,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 75,
+    "championLevel": 1,
+    "championPoints": 577,
+    "lastPlayTime": 1649228446000,
+    "championPointsSinceLastLevel": 577,
+    "championPointsUntilNextLevel": 1223,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 238,
+    "championLevel": 1,
+    "championPoints": 554,
+    "lastPlayTime": 1687953026000,
+    "championPointsSinceLastLevel": 554,
+    "championPointsUntilNextLevel": 1246,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 57,
+    "championLevel": 1,
+    "championPoints": 553,
+    "lastPlayTime": 1630226868000,
+    "championPointsSinceLastLevel": 553,
+    "championPointsUntilNextLevel": 1247,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 421,
+    "championLevel": 1,
+    "championPoints": 511,
+    "lastPlayTime": 1742130714000,
+    "championPointsSinceLastLevel": 511,
+    "championPointsUntilNextLevel": 1289,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 950,
+    "championLevel": 1,
+    "championPoints": 499,
+    "lastPlayTime": 1741419576000,
+    "championPointsSinceLastLevel": 499,
+    "championPointsUntilNextLevel": 1301,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 98,
+    "championLevel": 1,
+    "championPoints": 466,
+    "lastPlayTime": 1742019806000,
+    "championPointsSinceLastLevel": 466,
+    "championPointsUntilNextLevel": 1334,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 54,
+    "championLevel": 1,
+    "championPoints": 434,
+    "lastPlayTime": 1638788489000,
+    "championPointsSinceLastLevel": 434,
+    "championPointsUntilNextLevel": 1366,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 68,
+    "championLevel": 1,
+    "championPoints": 433,
+    "lastPlayTime": 1743172196000,
+    "championPointsSinceLastLevel": 433,
+    "championPointsUntilNextLevel": 1367,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 90,
+    "championLevel": 1,
+    "championPoints": 332,
+    "lastPlayTime": 1742485827000,
+    "championPointsSinceLastLevel": 332,
+    "championPointsUntilNextLevel": 1468,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 26,
+    "championLevel": 1,
+    "championPoints": 281,
+    "lastPlayTime": 1675072375000,
+    "championPointsSinceLastLevel": 281,
+    "championPointsUntilNextLevel": 1519,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 120,
+    "championLevel": 1,
+    "championPoints": 273,
+    "lastPlayTime": 1741323403000,
+    "championPointsSinceLastLevel": 273,
+    "championPointsUntilNextLevel": 1527,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 24,
+    "championLevel": 1,
+    "championPoints": 273,
+    "lastPlayTime": 1705580015000,
+    "championPointsSinceLastLevel": 273,
+    "championPointsUntilNextLevel": 1527,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 56,
+    "championLevel": 1,
+    "championPoints": 233,
+    "lastPlayTime": 1638874639000,
+    "championPointsSinceLastLevel": 233,
+    "championPointsUntilNextLevel": 1567,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 19,
+    "championLevel": 1,
+    "championPoints": 165,
+    "lastPlayTime": 1682338369000,
+    "championPointsSinceLastLevel": 165,
+    "championPointsUntilNextLevel": 1635,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 3,
+    "championLevel": 1,
+    "championPoints": 164,
+    "lastPlayTime": 1637047828000,
+    "championPointsSinceLastLevel": 164,
+    "championPointsUntilNextLevel": 1636,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 41,
+    "championLevel": 1,
+    "championPoints": 133,
+    "lastPlayTime": 1639493207000,
+    "championPointsSinceLastLevel": 133,
+    "championPointsUntilNextLevel": 1667,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 36,
+    "championLevel": 1,
+    "championPoints": 127,
+    "lastPlayTime": 1649226654000,
+    "championPointsSinceLastLevel": 127,
+    "championPointsUntilNextLevel": 1673,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 91,
+    "championLevel": 1,
+    "championPoints": 105,
+    "lastPlayTime": 1667545086000,
+    "championPointsSinceLastLevel": 105,
+    "championPointsUntilNextLevel": 1695,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  },
+  {
+    "puuid": "a2Lbzn3Ce1RVe8LgPxHvEsbB81RkrZeFDsgt40pYDQNGjuf_MrDOvGytadXfRm3nfmGgnGFEpyCymw",
+    "championId": 121,
+    "championLevel": 1,
+    "championPoints": 84,
+    "lastPlayTime": 1621003658000,
+    "championPointsSinceLastLevel": 84,
+    "championPointsUntilNextLevel": 1716,
+    "markRequiredForNextLevel": 0,
+    "tokensEarned": 0,
+    "championSeasonMilestone": 0,
+    "nextSeasonMilestone": {
+      "requireGradeCounts": {
+        "A-": 1
+      },
+      "rewardMarks": 1,
+      "bonus": false,
+      "totalGamesRequires": 1
+    }
+  }
+]

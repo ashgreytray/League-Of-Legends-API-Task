@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LoL Champion Build Analyzer</title>
+  <style>
+    body {
+      background: #0f1117;
+      color: #fff;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    select, button, input {
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      margin: 10px;
+    }
+    .section {
+      margin: 20px 0;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .champion-grid img, .grid img {
+      width: 64px;
+      height: 64px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      border-radius: 8px;
+    }
+    .champion-grid img.selected, .grid img.selected {
+      border-color: #3b82f6;
+    }
+    .analysis {
+      background: #1f2937;
+      padding: 15px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .fallback {
+      width: 64px;
+      height: 64px;
+      background: #444;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ccc;
+      font-size: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Champion Build Analyzer</h1>
+
+  <div class="section">
+    <h2>Select a Champion</h2>
+    <input type="text" id="championSearch" placeholder="Search champion by name...">
+    <select id="roleFilter">
+      <option value="">All Roles</option>
+      <option value="Fighter">Top</option>
+      <option value="Tank">Jungle</option>
+      <option value="Mage">Mid</option>
+      <option value="Marksman">Bot</option>
+      <option value="Support">Support</option>
+    </select>
+    <div id="championGrid" class="grid champion-grid"></div>
+  </div>
+
+  <div class="section">
+    <h2>Choose Item Progression</h2>
+    <div id="itemsGrid" class="grid"></div>
+  </div>
+
+  <div class="section">
+    <h2>Choose Runes</h2>
+    <div id="runesGrid" class="grid"></div>
+  </div>
+
+  <div class="section">
+    <button onclick="analyzeBuild()">Analyze Build</button>
+  </div>
+
+  <div class="section analysis" id="analysis"></div>
+
+  <script>
+    const championGrid = document.getElementById('championGrid');
+    const itemsGrid = document.getElementById('itemsGrid');
+    const runesGrid = document.getElementById('runesGrid');
+    const analysisDiv = document.getElementById('analysis');
+    const championSearch = document.getElementById('championSearch');
+    const roleFilter = document.getElementById('roleFilter');
+
+    let champions = {};
+    let selectedItems = [];
+    let selectedRunes = [];
+    let selectedChampion = null;
+    let allChampData = [];
+
+    const ITEMS = [
+      "1001", "1036", "1038", "3078", "3153", "3026", "3089"
+    ];
+
+    const RUNE_MAPPING = {
+      "8005": "Precision/Conqueror/Conqueror.png",
+      "8112": "Domination/Electrocute/Electrocute.png",
+      "8437": "Resolve/GraspOfTheUndying/GraspOfTheUndying.png",
+      "8021": "Precision/FleetFootwork/FleetFootwork.png",
+      "8214": "Sorcery/SummonAery/SummonAery.png",
+      "8439": "Resolve/Aftershock/Aftershock.png",
+    };
+
+    function createIcon(name, container, selectedArray, isChampion = false, url = '') {
+      const img = document.createElement('img');
+      img.src = url;
+      img.alt = name;
+      img.title = name;
+      img.onerror = () => {
+        const fallback = document.createElement('div');
+        fallback.className = 'fallback';
+        fallback.innerText = 'Image\nUnavailable';
+        container.appendChild(fallback);
+        img.remove();
+      };
+      img.onclick = () => {
+        if (isChampion) {
+          Array.from(container.children).forEach(child => child.classList.remove('selected'));
+          img.classList.add('selected');
+          selectedChampion = name;
+        } else {
+          if (img.classList.contains('selected')) {
+            img.classList.remove('selected');
+            const idx = selectedArray.indexOf(name);
+            if (idx !== -1) selectedArray.splice(idx, 1);
+          } else {
+            img.classList.add('selected');
+            selectedArray.push(name);
+          }
+        }
+      };
+      container.appendChild(img);
+    }
+
+    function renderChampions(filterText = '', filterRole = '') {
+      championGrid.innerHTML = '';
+      allChampData.forEach(champ => {
+        const champName = champ.name.toLowerCase();
+        const champTags = champ.tags.map(t => t.toLowerCase());
+        if (
+          (filterText === '' || champName.includes(filterText.toLowerCase())) &&
+          (filterRole === '' || champTags.includes(filterRole.toLowerCase()))
+        ) {
+          createIcon(champ.name, championGrid, null, true, champ.icon);
+        }
+      });
+    }
+
+    function renderBuildSelectors() {
+      ITEMS.forEach(item => createIcon(item, itemsGrid, selectedItems, false, `https://ddragon.leagueoflegends.com/cdn/14.10.1/img/item/${item}.png`));
+      Object.entries(RUNE_MAPPING).forEach(([runeId, path]) => {
+        const url = `https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/${path}`;
+        createIcon(runeId, runesGrid, selectedRunes, false, url);
+      });
+    }
+
+    function analyzeBuild() {
+      if (!selectedChampion) {
+        analysisDiv.innerHTML = `<p>Please select a champion.</p>`;
+        return;
+      }
+
+      let output = `<h3>Analysis for ${selectedChampion}</h3>`;
+
+      if (selectedChampion === "Lux" && selectedItems.includes("3089")) {
+        output += `<p>Excellent pick! Rabadon's synergizes well with Lux's AP burst damage.</p>`;
+      }
+      if (selectedChampion === "Darius" && selectedRunes.includes("8005")) {
+        output += `<p>Great synergy. Conqueror maximises Darius's extended skirmishing potential.</p>`;
+      }
+      if (selectedItems.length === 0 || selectedRunes.length === 0) {
+        output += `<p>Please select both items and runes for a full analysis.</p>`;
+      } else {
+        output += `<p><strong>General Evaluation:</strong> Your build appears balanced with offensive and defensive options. Ensure the item path complements your laning phase.</p>`;
+      }
+
+      analysisDiv.innerHTML = output;
+    }
+
+    fetch('https://ddragon.leagueoflegends.com/cdn/14.10.1/data/en_US/champion.json')
+      .then(res => res.json())
+      .then(data => {
+        champions = data.data;
+        allChampData = Object.keys(champions).map(key => ({
+          name: champions[key].id,
+          icon: `https://ddragon.leagueoflegends.com/cdn/14.10.1/img/champion/${champions[key].id}.png`,
+          tags: champions[key].tags
+        }));
+        renderChampions();
+        renderBuildSelectors();
+      });
+
+    championSearch.addEventListener('input', () => {
+      renderChampions(championSearch.value, roleFilter.value);
+    });
+
+    roleFilter.addEventListener('change', () => {
+      renderChampions(championSearch.value, roleFilter.value);
+    });
+  </script>
+</body>
+</html>

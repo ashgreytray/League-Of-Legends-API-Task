@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LoL Team Harmony Builder</title>
+  <style>
+    body {
+      background: #0f1117;
+      color: #fff;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    #search {
+      margin: 10px auto;
+      display: block;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      width: 300px;
+    }
+
+    .filters {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .filters button {
+      background: #1f2937;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 64px);
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .champion {
+      width: 64px;
+      height: 64px;
+      cursor: grab;
+    }
+
+    .team-composition {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .role-slot {
+      width: 80px;
+      height: 80px;
+      border: 2px dashed #4b5563;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 10px;
+    }
+
+    .role-slot img {
+      max-width: 64px;
+      max-height: 64px;
+    }
+
+    #harmony-report {
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>LoL Team Harmony Builder</h1>
+  <input type="text" id="search" placeholder="Search champion...">
+  <div class="filters">
+    <button onclick="filterByRole('All')">All</button>
+    <button onclick="filterByRole('Top')">Top</button>
+    <button onclick="filterByRole('Jungle')">Jungle</button>
+    <button onclick="filterByRole('Mid')">Mid</button>
+    <button onclick="filterByRole('Bottom')">Bottom</button>
+    <button onclick="filterByRole('Support')">Support</button>
+  </div>
+
+  <div class="grid" id="championGrid"></div>
+
+  <h2 style="text-align:center;">Your Team Composition</h2>
+  <div class="team-composition">
+    <div class="role-slot" data-role="Top">Top</div>
+    <div class="role-slot" data-role="Jungle">Jungle</div>
+    <div class="role-slot" data-role="Mid">Mid</div>
+    <div class="role-slot" data-role="Bottom">Bottom</div>
+    <div class="role-slot" data-role="Support">Support</div>
+  </div>
+
+  <div id="harmony-report"></div>
+
+  <script>
+    let champions = [];
+    const harmonyMatrix = {};
+
+    fetch('https://ddragon.leagueoflegends.com/cdn/13.12.1/data/en_US/champion.json')
+      .then(res => res.json())
+      .then(data => {
+        const roles = ['Top', 'Jungle', 'Mid', 'Bottom', 'Support'];
+        const keys = Object.keys(data.data);
+        for (let i = 0; i < keys.length; i++) {
+          const champA = data.data[keys[i]].id;
+          harmonyMatrix[champA] = {};
+          for (let j = 0; j < keys.length; j++) {
+            if (i !== j) {
+              const champB = data.data[keys[j]].id;
+              harmonyMatrix[champA][champB] = Math.floor(Math.random() * 6); // Score 0–5
+            }
+          }
+          champions.push({
+            name: champA,
+            role: roles[Math.floor(Math.random() * roles.length)],
+            icon: `https://ddragon.leagueoflegends.com/cdn/13.12.1/img/champion/${data.data[keys[i]].image.full}`
+          });
+        }
+        renderChampions(champions);
+      });
+
+    const grid = document.getElementById('championGrid');
+    const search = document.getElementById('search');
+    const harmonyReport = document.getElementById('harmony-report');
+
+    function renderChampions(list) {
+      grid.innerHTML = '';
+      list.forEach(champ => {
+        const img = document.createElement('img');
+        img.src = champ.icon;
+        img.className = 'champion';
+        img.draggable = true;
+        img.dataset.name = champ.name;
+        img.dataset.role = champ.role;
+        img.addEventListener('dragstart', e => {
+          e.dataTransfer.setData('text/plain', JSON.stringify(champ));
+        });
+        grid.appendChild(img);
+      });
+    }
+
+    function filterByRole(role) {
+      if (role === 'All') {
+        renderChampions(champions);
+      } else {
+        renderChampions(champions.filter(c => c.role === role));
+      }
+    }
+
+    search.addEventListener('input', () => {
+      const val = search.value.toLowerCase();
+      renderChampions(champions.filter(c => c.name.toLowerCase().includes(val)));
+    });
+
+    document.querySelectorAll('.role-slot').forEach(slot => {
+      slot.addEventListener('dragover', e => e.preventDefault());
+      slot.addEventListener('drop', e => {
+        e.preventDefault();
+        const data = JSON.parse(e.dataTransfer.getData('text/plain'));
+        slot.innerHTML = `<div>${slot.dataset.role}</div><img src="${data.icon}" alt="${data.name}" title="${data.name}">`;
+        slot.dataset.champion = data.name;
+        analyseHarmony();
+      });
+    });
+
+    function analyseHarmony() {
+      const selected = Array.from(document.querySelectorAll('.role-slot'))
+        .map(slot => slot.dataset.champion)
+        .filter(Boolean);
+
+      if (selected.length < 5) {
+        harmonyReport.innerHTML = '<p>Fill all roles to analyse harmony.</p>';
+        return;
+      }
+
+      let harmonyScore = 0;
+      for (let i = 0; i < selected.length; i++) {
+        for (let j = i + 1; j < selected.length; j++) {
+          const champA = selected[i];
+          const champB = selected[j];
+          const harmony = harmonyMatrix[champA]?.[champB] || harmonyMatrix[champB]?.[champA] || 0;
+          harmonyScore += harmony;
+        }
+      }
+
+      let explanation = '';
+      if (harmonyScore >= 80) {
+        explanation = 'This team composition demonstrates outstanding harmony. The synergy across lanes and roles is likely to result in cohesive objective control, great teamfight potential, and reliable early-to-late game transitions.';
+      } else if (harmonyScore >= 60) {
+        explanation = 'Solid synergy overall. A few champions may not perfectly align in timing or pressure, but the composition should perform well if executed properly.';
+      } else if (harmonyScore >= 40) {
+        explanation = 'Moderate harmony. The team may experience uneven pressure or conflicting playstyles, requiring coordination and strategic play to perform effectively.';
+      } else {
+        explanation = 'Low harmony. This team comp may struggle due to incompatible pacing, weak synergy in skirmishes or teamfights, or unclear win conditions.';
+      }
+
+      harmonyReport.innerHTML = `<h3>Harmony Rating: ${harmonyScore}</h3><p>${explanation}</p>`;
+    }
+  </script>
+</body>
+</html>
